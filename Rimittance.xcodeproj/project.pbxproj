@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2163FF002B6C236B00878E7B /* RimittanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FEFF2B6C236B00878E7B /* RimittanceApp.swift */; };
-		2163FF022B6C236B00878E7B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FF012B6C236B00878E7B /* ContentView.swift */; };
 		2163FF042B6C236C00878E7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2163FF032B6C236C00878E7B /* Assets.xcassets */; };
 		2163FF072B6C236C00878E7B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2163FF062B6C236C00878E7B /* Preview Assets.xcassets */; };
 		2163FF112B6C236C00878E7B /* RimittanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FF102B6C236C00878E7B /* RimittanceTests.swift */; };
@@ -46,6 +45,7 @@
 		2163FFB52B6C57F100878E7B /* WalletOptionsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFB42B6C57F100878E7B /* WalletOptionsScreen.swift */; };
 		2163FFB72B6C57FA00878E7B /* InvoiceScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFB62B6C57FA00878E7B /* InvoiceScreen.swift */; };
 		2163FFB92B6C581000878E7B /* SuccessScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFB82B6C581000878E7B /* SuccessScreen.swift */; };
+		2163FFBB2B6C591400878E7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFBA2B6C591400878E7B /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +68,6 @@
 /* Begin PBXFileReference section */
 		2163FEFC2B6C236B00878E7B /* Rimittance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rimittance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2163FEFF2B6C236B00878E7B /* RimittanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RimittanceApp.swift; sourceTree = "<group>"; };
-		2163FF012B6C236B00878E7B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2163FF032B6C236C00878E7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2163FF062B6C236C00878E7B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2163FF0C2B6C236C00878E7B /* RimittanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RimittanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +106,7 @@
 		2163FFB42B6C57F100878E7B /* WalletOptionsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletOptionsScreen.swift; sourceTree = "<group>"; };
 		2163FFB62B6C57FA00878E7B /* InvoiceScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceScreen.swift; sourceTree = "<group>"; };
 		2163FFB82B6C581000878E7B /* SuccessScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessScreen.swift; sourceTree = "<group>"; };
+		2163FFBA2B6C591400878E7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,7 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				2163FEFF2B6C236B00878E7B /* RimittanceApp.swift */,
-				2163FF012B6C236B00878E7B /* ContentView.swift */,
+				2163FFBA2B6C591400878E7B /* AppDelegate.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -546,7 +546,6 @@
 				2163FF922B6C45B100878E7B /* NetworkService.swift in Sources */,
 				2163FFAD2B6C57BA00878E7B /* HomeScreen.swift in Sources */,
 				2163FF962B6C46DE00878E7B /* String.swift in Sources */,
-				2163FF022B6C236B00878E7B /* ContentView.swift in Sources */,
 				2163FF732B6C31D200878E7B /* Observer.swift in Sources */,
 				2163FFAF2B6C57CC00878E7B /* SendOptionsScreen.swift in Sources */,
 				2163FF752B6C31E600878E7B /* Color.swift in Sources */,
@@ -564,6 +563,7 @@
 				2163FF792B6C323000878E7B /* View.swift in Sources */,
 				2163FFB72B6C57FA00878E7B /* InvoiceScreen.swift in Sources */,
 				2163FF9A2B6C483F00878E7B /* RecipientRepo.swift in Sources */,
+				2163FFBB2B6C591400878E7B /* AppDelegate.swift in Sources */,
 				2163FF7B2B6C323D00878E7B /* Text.swift in Sources */,
 				2163FF002B6C236B00878E7B /* RimittanceApp.swift in Sources */,
 				2163FF712B6C2D8F00878E7B /* NavigationCoordinator.swift in Sources */,
