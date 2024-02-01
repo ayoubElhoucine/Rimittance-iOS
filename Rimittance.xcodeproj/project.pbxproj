@@ -39,6 +39,13 @@
 		2163FFA02B6C49AC00878E7B /* Recipient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FF9F2B6C49AC00878E7B /* Recipient.swift */; };
 		2163FFA22B6C4A8E00878E7B /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFA12B6C4A8E00878E7B /* Country.swift */; };
 		2163FFA42B6C4AC400878E7B /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFA32B6C4AC400878E7B /* Wallet.swift */; };
+		2163FFAD2B6C57BA00878E7B /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFAC2B6C57BA00878E7B /* HomeScreen.swift */; };
+		2163FFAF2B6C57CC00878E7B /* SendOptionsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFAE2B6C57CC00878E7B /* SendOptionsScreen.swift */; };
+		2163FFB12B6C57DC00878E7B /* SendDestinationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFB02B6C57DC00878E7B /* SendDestinationScreen.swift */; };
+		2163FFB32B6C57E600878E7B /* RecipientScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFB22B6C57E600878E7B /* RecipientScreen.swift */; };
+		2163FFB52B6C57F100878E7B /* WalletOptionsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFB42B6C57F100878E7B /* WalletOptionsScreen.swift */; };
+		2163FFB72B6C57FA00878E7B /* InvoiceScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFB62B6C57FA00878E7B /* InvoiceScreen.swift */; };
+		2163FFB92B6C581000878E7B /* SuccessScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFB82B6C581000878E7B /* SuccessScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +100,13 @@
 		2163FF9F2B6C49AC00878E7B /* Recipient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipient.swift; sourceTree = "<group>"; };
 		2163FFA12B6C4A8E00878E7B /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		2163FFA32B6C4AC400878E7B /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		2163FFAC2B6C57BA00878E7B /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		2163FFAE2B6C57CC00878E7B /* SendOptionsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendOptionsScreen.swift; sourceTree = "<group>"; };
+		2163FFB02B6C57DC00878E7B /* SendDestinationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDestinationScreen.swift; sourceTree = "<group>"; };
+		2163FFB22B6C57E600878E7B /* RecipientScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientScreen.swift; sourceTree = "<group>"; };
+		2163FFB42B6C57F100878E7B /* WalletOptionsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletOptionsScreen.swift; sourceTree = "<group>"; };
+		2163FFB62B6C57FA00878E7B /* InvoiceScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceScreen.swift; sourceTree = "<group>"; };
+		2163FFB82B6C581000878E7B /* SuccessScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +315,11 @@
 		2163FF622B6C2A4A00878E7B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				2163FFA52B6C52A900878E7B /* Home */,
+				2163FFA62B6C52F800878E7B /* SendOptions */,
+				2163FFA72B6C531100878E7B /* Recipient */,
+				2163FFA82B6C54F600878E7B /* WalletOptions */,
+				2163FFA92B6C55A100878E7B /* Invoice */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -336,6 +355,48 @@
 				2163FF8A2B6C3B3C00878E7B /* Localizable.strings */,
 			);
 			path = Localizable;
+			sourceTree = "<group>";
+		};
+		2163FFA52B6C52A900878E7B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2163FFAC2B6C57BA00878E7B /* HomeScreen.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2163FFA62B6C52F800878E7B /* SendOptions */ = {
+			isa = PBXGroup;
+			children = (
+				2163FFAE2B6C57CC00878E7B /* SendOptionsScreen.swift */,
+				2163FFB02B6C57DC00878E7B /* SendDestinationScreen.swift */,
+			);
+			path = SendOptions;
+			sourceTree = "<group>";
+		};
+		2163FFA72B6C531100878E7B /* Recipient */ = {
+			isa = PBXGroup;
+			children = (
+				2163FFB22B6C57E600878E7B /* RecipientScreen.swift */,
+			);
+			path = Recipient;
+			sourceTree = "<group>";
+		};
+		2163FFA82B6C54F600878E7B /* WalletOptions */ = {
+			isa = PBXGroup;
+			children = (
+				2163FFB42B6C57F100878E7B /* WalletOptionsScreen.swift */,
+			);
+			path = WalletOptions;
+			sourceTree = "<group>";
+		};
+		2163FFA92B6C55A100878E7B /* Invoice */ = {
+			isa = PBXGroup;
+			children = (
+				2163FFB62B6C57FA00878E7B /* InvoiceScreen.swift */,
+				2163FFB82B6C581000878E7B /* SuccessScreen.swift */,
+			);
+			path = Invoice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -483,18 +544,25 @@
 			files = (
 				2163FFA42B6C4AC400878E7B /* Wallet.swift in Sources */,
 				2163FF922B6C45B100878E7B /* NetworkService.swift in Sources */,
+				2163FFAD2B6C57BA00878E7B /* HomeScreen.swift in Sources */,
 				2163FF962B6C46DE00878E7B /* String.swift in Sources */,
 				2163FF022B6C236B00878E7B /* ContentView.swift in Sources */,
 				2163FF732B6C31D200878E7B /* Observer.swift in Sources */,
+				2163FFAF2B6C57CC00878E7B /* SendOptionsScreen.swift in Sources */,
 				2163FF752B6C31E600878E7B /* Color.swift in Sources */,
 				2163FFA02B6C49AC00878E7B /* Recipient.swift in Sources */,
 				2163FF6D2B6C2D7A00878E7B /* CoordinatorView.swift in Sources */,
+				2163FFB12B6C57DC00878E7B /* SendDestinationScreen.swift in Sources */,
+				2163FFB32B6C57E600878E7B /* RecipientScreen.swift in Sources */,
 				2163FFA22B6C4A8E00878E7B /* Country.swift in Sources */,
+				2163FFB52B6C57F100878E7B /* WalletOptionsScreen.swift in Sources */,
 				2163FF9C2B6C484900878E7B /* CountryRepo.swift in Sources */,
 				2163FF982B6C47F100878E7B /* Double.swift in Sources */,
 				2163FF942B6C466C00878E7B /* EscapingSlashes.swift in Sources */,
 				2163FF772B6C31F200878E7B /* Font.swift in Sources */,
+				2163FFB92B6C581000878E7B /* SuccessScreen.swift in Sources */,
 				2163FF792B6C323000878E7B /* View.swift in Sources */,
+				2163FFB72B6C57FA00878E7B /* InvoiceScreen.swift in Sources */,
 				2163FF9A2B6C483F00878E7B /* RecipientRepo.swift in Sources */,
 				2163FF7B2B6C323D00878E7B /* Text.swift in Sources */,
 				2163FF002B6C236B00878E7B /* RimittanceApp.swift in Sources */,

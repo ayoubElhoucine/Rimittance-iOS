@@ -19,9 +19,13 @@ public class NavigationCoordinator {
     static let shared = NavigationCoordinator(start: CoordinatorView.StartPoint.splash)
     
     enum Screens {
-        case spash
-        case login
         case home
+        case sendOptions
+        case sendDestination
+        case recipient
+        case walletOptions(Recipient)
+        case invoice(Recipient)
+        case success
     }
     
     public enum TransitAnimation {
@@ -122,8 +126,8 @@ public class NavigationCoordinator {
 extension CoordinatorView.StartPoint {
     var screen: NavigationCoordinator.Screens {
         switch self {
-        case .splash: return .spash
-        case .login: return .login
+        case .splash: return .home
+        case .login: return .home
         case .home: return .home
         }
     }

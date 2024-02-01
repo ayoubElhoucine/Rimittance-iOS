@@ -73,10 +73,13 @@ extension CoordinatorView {
         @ViewBuilder
         private func ScreenFromInfo(_ screen: NavigationCoordinator.Screens) -> some View {
             switch screen {
-            case .spash: EmptyView()
-            case .login: EmptyView()
-            case .home: EmptyView()
-            default: EmptyView()
+            case .home: HomeScreen()
+            case .sendOptions: SendOptionsScreen()
+            case .sendDestination: SendDestinationScreen()
+            case .recipient: RecipientScreen()
+            case .walletOptions(let recipient): WalletOptionsScreen(recipient: recipient)
+            case .invoice(let recipient): InvoiceScreen(recipient: recipient)
+            case .success: SuccessScreen()
             }
         }
     }
