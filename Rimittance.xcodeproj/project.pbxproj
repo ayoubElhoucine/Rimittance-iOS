@@ -27,6 +27,18 @@
 		2163FF822B6C38E700878E7B /* Outfit-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2163FF7E2B6C38E700878E7B /* Outfit-Bold.ttf */; };
 		2163FF832B6C38E700878E7B /* Outfit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2163FF7F2B6C38E700878E7B /* Outfit-Medium.ttf */; };
 		2163FF882B6C3B3C00878E7B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2163FF8A2B6C3B3C00878E7B /* Localizable.strings */; };
+		2163FF8D2B6C452800878E7B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2163FF8C2B6C452800878E7B /* Alamofire */; };
+		2163FF902B6C455900878E7B /* BottomSheetUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2163FF8F2B6C455900878E7B /* BottomSheetUI */; };
+		2163FF922B6C45B100878E7B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FF912B6C45B100878E7B /* NetworkService.swift */; };
+		2163FF942B6C466C00878E7B /* EscapingSlashes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FF932B6C466C00878E7B /* EscapingSlashes.swift */; };
+		2163FF962B6C46DE00878E7B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FF952B6C46DE00878E7B /* String.swift */; };
+		2163FF982B6C47F100878E7B /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FF972B6C47F100878E7B /* Double.swift */; };
+		2163FF9A2B6C483F00878E7B /* RecipientRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FF992B6C483F00878E7B /* RecipientRepo.swift */; };
+		2163FF9C2B6C484900878E7B /* CountryRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FF9B2B6C484900878E7B /* CountryRepo.swift */; };
+		2163FF9E2B6C485200878E7B /* WalletRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FF9D2B6C485200878E7B /* WalletRepo.swift */; };
+		2163FFA02B6C49AC00878E7B /* Recipient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FF9F2B6C49AC00878E7B /* Recipient.swift */; };
+		2163FFA22B6C4A8E00878E7B /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFA12B6C4A8E00878E7B /* Country.swift */; };
+		2163FFA42B6C4AC400878E7B /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFA32B6C4AC400878E7B /* Wallet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +83,16 @@
 		2163FF7F2B6C38E700878E7B /* Outfit-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-Medium.ttf"; sourceTree = "<group>"; };
 		2163FF842B6C392000878E7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2163FF892B6C3B3C00878E7B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2163FF912B6C45B100878E7B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		2163FF932B6C466C00878E7B /* EscapingSlashes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscapingSlashes.swift; sourceTree = "<group>"; };
+		2163FF952B6C46DE00878E7B /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		2163FF972B6C47F100878E7B /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		2163FF992B6C483F00878E7B /* RecipientRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientRepo.swift; sourceTree = "<group>"; };
+		2163FF9B2B6C484900878E7B /* CountryRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryRepo.swift; sourceTree = "<group>"; };
+		2163FF9D2B6C485200878E7B /* WalletRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletRepo.swift; sourceTree = "<group>"; };
+		2163FF9F2B6C49AC00878E7B /* Recipient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipient.swift; sourceTree = "<group>"; };
+		2163FFA12B6C4A8E00878E7B /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		2163FFA32B6C4AC400878E7B /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +100,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2163FF8D2B6C452800878E7B /* Alamofire in Frameworks */,
+				2163FF902B6C455900878E7B /* BottomSheetUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +205,8 @@
 		2163FF2B2B6C255B00878E7B /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				2163FF912B6C45B100878E7B /* NetworkService.swift */,
+				2163FF932B6C466C00878E7B /* EscapingSlashes.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -188,6 +214,9 @@
 		2163FF2C2B6C25F400878E7B /* Repo */ = {
 			isa = PBXGroup;
 			children = (
+				2163FF992B6C483F00878E7B /* RecipientRepo.swift */,
+				2163FF9B2B6C484900878E7B /* CountryRepo.swift */,
+				2163FF9D2B6C485200878E7B /* WalletRepo.swift */,
 			);
 			path = Repo;
 			sourceTree = "<group>";
@@ -195,6 +224,9 @@
 		2163FF2D2B6C25FB00878E7B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2163FF9F2B6C49AC00878E7B /* Recipient.swift */,
+				2163FFA12B6C4A8E00878E7B /* Country.swift */,
+				2163FFA32B6C4AC400878E7B /* Wallet.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -223,6 +255,8 @@
 		2163FF5D2B6C29A100878E7B /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				2163FF952B6C46DE00878E7B /* String.swift */,
+				2163FF972B6C47F100878E7B /* Double.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -320,6 +354,10 @@
 			dependencies = (
 			);
 			name = Rimittance;
+			packageProductDependencies = (
+				2163FF8C2B6C452800878E7B /* Alamofire */,
+				2163FF8F2B6C455900878E7B /* BottomSheetUI */,
+			);
 			productName = Rimittance;
 			productReference = 2163FEFC2B6C236B00878E7B /* Rimittance.app */;
 			productType = "com.apple.product-type.application";
@@ -392,6 +430,10 @@
 				Base,
 			);
 			mainGroup = 2163FEF32B6C236B00878E7B;
+			packageReferences = (
+				2163FF8B2B6C452800878E7B /* XCRemoteSwiftPackageReference "Alamofire" */,
+				2163FF8E2B6C455900878E7B /* XCRemoteSwiftPackageReference "BottomSheetUI-iOS" */,
+			);
 			productRefGroup = 2163FEFD2B6C236B00878E7B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -439,16 +481,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2163FFA42B6C4AC400878E7B /* Wallet.swift in Sources */,
+				2163FF922B6C45B100878E7B /* NetworkService.swift in Sources */,
+				2163FF962B6C46DE00878E7B /* String.swift in Sources */,
 				2163FF022B6C236B00878E7B /* ContentView.swift in Sources */,
 				2163FF732B6C31D200878E7B /* Observer.swift in Sources */,
 				2163FF752B6C31E600878E7B /* Color.swift in Sources */,
+				2163FFA02B6C49AC00878E7B /* Recipient.swift in Sources */,
 				2163FF6D2B6C2D7A00878E7B /* CoordinatorView.swift in Sources */,
+				2163FFA22B6C4A8E00878E7B /* Country.swift in Sources */,
+				2163FF9C2B6C484900878E7B /* CountryRepo.swift in Sources */,
+				2163FF982B6C47F100878E7B /* Double.swift in Sources */,
+				2163FF942B6C466C00878E7B /* EscapingSlashes.swift in Sources */,
 				2163FF772B6C31F200878E7B /* Font.swift in Sources */,
 				2163FF792B6C323000878E7B /* View.swift in Sources */,
+				2163FF9A2B6C483F00878E7B /* RecipientRepo.swift in Sources */,
 				2163FF7B2B6C323D00878E7B /* Text.swift in Sources */,
 				2163FF002B6C236B00878E7B /* RimittanceApp.swift in Sources */,
 				2163FF712B6C2D8F00878E7B /* NavigationCoordinator.swift in Sources */,
 				2163FF6F2B6C2D8400878E7B /* CoordinatorViewStackTrigger.swift in Sources */,
+				2163FF9E2B6C485200878E7B /* WalletRepo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -793,6 +845,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2163FF8B2B6C452800878E7B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+		2163FF8E2B6C455900878E7B /* XCRemoteSwiftPackageReference "BottomSheetUI-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ayoubElhoucine/BottomSheetUI-iOS";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2163FF8C2B6C452800878E7B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2163FF8B2B6C452800878E7B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		2163FF8F2B6C455900878E7B /* BottomSheetUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2163FF8E2B6C455900878E7B /* XCRemoteSwiftPackageReference "BottomSheetUI-iOS" */;
+			productName = BottomSheetUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2163FEF42B6C236B00878E7B /* Project object */;
 }
