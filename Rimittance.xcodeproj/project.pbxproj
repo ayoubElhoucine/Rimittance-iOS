@@ -14,6 +14,14 @@
 		2163FF112B6C236C00878E7B /* RimittanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FF102B6C236C00878E7B /* RimittanceTests.swift */; };
 		2163FF1B2B6C236C00878E7B /* RimittanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FF1A2B6C236C00878E7B /* RimittanceUITests.swift */; };
 		2163FF1D2B6C236C00878E7B /* RimittanceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FF1C2B6C236C00878E7B /* RimittanceUITestsLaunchTests.swift */; };
+		2163FF6D2B6C2D7A00878E7B /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FF6C2B6C2D7A00878E7B /* CoordinatorView.swift */; };
+		2163FF6F2B6C2D8400878E7B /* CoordinatorViewStackTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FF6E2B6C2D8400878E7B /* CoordinatorViewStackTrigger.swift */; };
+		2163FF712B6C2D8F00878E7B /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FF702B6C2D8F00878E7B /* NavigationCoordinator.swift */; };
+		2163FF732B6C31D200878E7B /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FF722B6C31D200878E7B /* Observer.swift */; };
+		2163FF752B6C31E600878E7B /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FF742B6C31E600878E7B /* Color.swift */; };
+		2163FF772B6C31F200878E7B /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FF762B6C31F200878E7B /* Font.swift */; };
+		2163FF792B6C323000878E7B /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FF782B6C323000878E7B /* View.swift */; };
+		2163FF7B2B6C323D00878E7B /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FF7A2B6C323D00878E7B /* Text.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,14 @@
 		2163FF162B6C236C00878E7B /* RimittanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RimittanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2163FF1A2B6C236C00878E7B /* RimittanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RimittanceUITests.swift; sourceTree = "<group>"; };
 		2163FF1C2B6C236C00878E7B /* RimittanceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RimittanceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2163FF6C2B6C2D7A00878E7B /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
+		2163FF6E2B6C2D8400878E7B /* CoordinatorViewStackTrigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorViewStackTrigger.swift; sourceTree = "<group>"; };
+		2163FF702B6C2D8F00878E7B /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
+		2163FF722B6C31D200878E7B /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		2163FF742B6C31E600878E7B /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		2163FF762B6C31F200878E7B /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		2163FF782B6C323000878E7B /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		2163FF7A2B6C323D00878E7B /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +110,8 @@
 		2163FEFE2B6C236B00878E7B /* Rimittance */ = {
 			isa = PBXGroup;
 			children = (
-				2163FEFF2B6C236B00878E7B /* RimittanceApp.swift */,
-				2163FF012B6C236B00878E7B /* ContentView.swift */,
+				2163FF292B6C250900878E7B /* Rimittance */,
+				2163FF2A2B6C252700878E7B /* RimittanceSerivce */,
 				2163FF032B6C236C00878E7B /* Assets.xcassets */,
 				2163FF052B6C236C00878E7B /* Preview Content */,
 			);
@@ -125,6 +141,142 @@
 				2163FF1C2B6C236C00878E7B /* RimittanceUITestsLaunchTests.swift */,
 			);
 			path = RimittanceUITests;
+			sourceTree = "<group>";
+		};
+		2163FF292B6C250900878E7B /* Rimittance */ = {
+			isa = PBXGroup;
+			children = (
+				2163FF2E2B6C28EE00878E7B /* Extensions */,
+				2163FF5F2B6C2A2200878E7B /* Resources */,
+				2163FF612B6C2A4200878E7B /* Main */,
+				2163FF622B6C2A4A00878E7B /* Screens */,
+				2163FF632B6C2A5300878E7B /* Views */,
+				2163FF642B6C2A6500878E7B /* Service */,
+			);
+			path = Rimittance;
+			sourceTree = "<group>";
+		};
+		2163FF2A2B6C252700878E7B /* RimittanceSerivce */ = {
+			isa = PBXGroup;
+			children = (
+				2163FF2B2B6C255B00878E7B /* Network */,
+				2163FF2C2B6C25F400878E7B /* Repo */,
+				2163FF2D2B6C25FB00878E7B /* Model */,
+			);
+			path = RimittanceSerivce;
+			sourceTree = "<group>";
+		};
+		2163FF2B2B6C255B00878E7B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2163FF2C2B6C25F400878E7B /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		2163FF2D2B6C25FB00878E7B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2163FF2E2B6C28EE00878E7B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2163FF5C2B6C299700878E7B /* SwiftUI */,
+				2163FF5D2B6C29A100878E7B /* Foundation */,
+				2163FF5E2B6C29F500878E7B /* Combine */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2163FF5C2B6C299700878E7B /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				2163FF742B6C31E600878E7B /* Color.swift */,
+				2163FF762B6C31F200878E7B /* Font.swift */,
+				2163FF782B6C323000878E7B /* View.swift */,
+				2163FF7A2B6C323D00878E7B /* Text.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		2163FF5D2B6C29A100878E7B /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		2163FF5E2B6C29F500878E7B /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				2163FF722B6C31D200878E7B /* Observer.swift */,
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
+		2163FF5F2B6C2A2200878E7B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2163FF602B6C2A3400878E7B /* Font */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2163FF602B6C2A3400878E7B /* Font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		2163FF612B6C2A4200878E7B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2163FEFF2B6C236B00878E7B /* RimittanceApp.swift */,
+				2163FF012B6C236B00878E7B /* ContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2163FF622B6C2A4A00878E7B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		2163FF632B6C2A5300878E7B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2163FF642B6C2A6500878E7B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2163FF652B6C2CB400878E7B /* Navigation */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2163FF652B6C2CB400878E7B /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				2163FF6C2B6C2D7A00878E7B /* CoordinatorView.swift */,
+				2163FF6E2B6C2D8400878E7B /* CoordinatorViewStackTrigger.swift */,
+				2163FF702B6C2D8F00878E7B /* NavigationCoordinator.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +410,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2163FF022B6C236B00878E7B /* ContentView.swift in Sources */,
+				2163FF732B6C31D200878E7B /* Observer.swift in Sources */,
+				2163FF752B6C31E600878E7B /* Color.swift in Sources */,
+				2163FF6D2B6C2D7A00878E7B /* CoordinatorView.swift in Sources */,
+				2163FF772B6C31F200878E7B /* Font.swift in Sources */,
+				2163FF792B6C323000878E7B /* View.swift in Sources */,
+				2163FF7B2B6C323D00878E7B /* Text.swift in Sources */,
 				2163FF002B6C236B00878E7B /* RimittanceApp.swift in Sources */,
+				2163FF712B6C2D8F00878E7B /* NavigationCoordinator.swift in Sources */,
+				2163FF6F2B6C2D8400878E7B /* CoordinatorViewStackTrigger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
