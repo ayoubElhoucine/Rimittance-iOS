@@ -26,6 +26,7 @@
 		2163FF812B6C38E700878E7B /* Outfit-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2163FF7D2B6C38E700878E7B /* Outfit-Regular.ttf */; };
 		2163FF822B6C38E700878E7B /* Outfit-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2163FF7E2B6C38E700878E7B /* Outfit-Bold.ttf */; };
 		2163FF832B6C38E700878E7B /* Outfit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2163FF7F2B6C38E700878E7B /* Outfit-Medium.ttf */; };
+		2163FF882B6C3B3C00878E7B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2163FF8A2B6C3B3C00878E7B /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		2163FF7E2B6C38E700878E7B /* Outfit-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-Bold.ttf"; sourceTree = "<group>"; };
 		2163FF7F2B6C38E700878E7B /* Outfit-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-Medium.ttf"; sourceTree = "<group>"; };
 		2163FF842B6C392000878E7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2163FF892B6C3B3C00878E7B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 		2163FF5F2B6C2A2200878E7B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2163FF852B6C3A9200878E7B /* Localizable */,
 				2163FF602B6C2A3400878E7B /* Font */,
 			);
 			path = Resources;
@@ -291,6 +294,14 @@
 				2163FF702B6C2D8F00878E7B /* NavigationCoordinator.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		2163FF852B6C3A9200878E7B /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				2163FF8A2B6C3B3C00878E7B /* Localizable.strings */,
+			);
+			path = Localizable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,6 +411,7 @@
 				2163FF812B6C38E700878E7B /* Outfit-Regular.ttf in Resources */,
 				2163FF072B6C236C00878E7B /* Preview Assets.xcassets in Resources */,
 				2163FF822B6C38E700878E7B /* Outfit-Bold.ttf in Resources */,
+				2163FF882B6C3B3C00878E7B /* Localizable.strings in Resources */,
 				2163FF042B6C236C00878E7B /* Assets.xcassets in Resources */,
 				2163FF832B6C38E700878E7B /* Outfit-Medium.ttf in Resources */,
 				2163FF802B6C38E700878E7B /* Outfit-SemiBold.ttf in Resources */,
@@ -471,6 +483,17 @@
 			targetProxy = 2163FF172B6C236C00878E7B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2163FF8A2B6C3B3C00878E7B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2163FF892B6C3B3C00878E7B /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2163FF1E2B6C236C00878E7B /* Debug */ = {

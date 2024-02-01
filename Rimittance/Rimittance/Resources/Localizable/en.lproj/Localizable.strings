@@ -1,0 +1,68 @@
+/* 
+  Localizable.strings
+  Rimittance
+
+  Created by Elhoucine Ayoub on 1/2/2024.
+  
+*/
+
+"home_title" = "Hey, John Doe";
+"top_up" = "Top up balance";
+"withdraw_money" = "Withdraw money";
+"get_iban" = "Get IBAN";
+"view_analytics" = "View analytics";
+"transactions" = "Transactions";
+"your_balance" = "Your balance";
+
+"home" = "Home";
+"cards" = "Cards";
+"tontines" = "Tontines";
+"settings" = "Settings";
+
+"send_money" = "Send money";
+"to_moneco_balance" = "To Moneco balance";
+"bank_transfer" = "Bank transfer";
+"send_to_africa" = "Send to Africa";
+"mobile_wallets" = "Mobile wallets";
+
+"prev_recipient" = "Previous recipients";
+"new_recipient" = "New recipient";
+"contact_phone" = "Contacts on your phone";
+"country" = "Country";
+"search" = "Search…";
+"next" = "Continue";
+"phone_number" = "Phone number";
+"first_name" = "First name";
+"last_name" = "Last name";
+
+"choose_wallet" = "Choose a mobile wallet";
+"choose_contact" = "Choose a contact";
+"how_much" = "How much are you sending ?";
+"your_current_balance" = "Your current balance is";
+"yearly_free" = "Yearly free remittances";
+"yearly_free_msg" = "Remittances are free with Moneco until you reach your limit, which resets every year.";
+"check_free_msg" = "Check number of free remittance remaining";
+"fees_break" = "Fees breakdown";
+"moneco_fees" = "Moneco fees";
+"transfer_fees" = "Transfer fees";
+"conversion_rate" = "Conversion rate";
+"you_spend_total" = "You’ll spend in total";
+"recipient_gets" = "Recipient gets";
+"send" = "Send";
+"sent_to" = "Sent to";
+"who_sending" = "Who are you sending to?";
+"no_result" = "No matching results found !";
+"add_manually" = "Or add manually";
+
+"confirm_transfer" = "Confirm transfer";
+"confirm" = "Confirm";
+"you_sending" = "You’re sending";
+"to" = "To";
+"via" = "Via";
+"how_you_sending" = "How much are you sending ?";
+
+"success_transfer_msg" = "Your money is on the\nway. Get excited!";
+"got_it" = "Got it!";
+
+"something_went_wrong" = "Something went wrong";
+"retry" = "Retry";
