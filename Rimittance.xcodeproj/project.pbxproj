@@ -60,6 +60,9 @@
 		2163FFD62B6D77B400878E7B /* TransactionsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFD52B6D77B400878E7B /* TransactionsSection.swift */; };
 		2163FFD82B6D914E00878E7B /* OptionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFD72B6D914E00878E7B /* OptionItem.swift */; };
 		2163FFDB2B6D960400878E7B /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFDA2B6D960400878E7B /* Divider.swift */; };
+		2163FFDD2B6D9C1500878E7B /* RecipientScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFDC2B6D9C1500878E7B /* RecipientScreenModel.swift */; };
+		2163FFE02B6D9CA900878E7B /* UiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFDF2B6D9CA900878E7B /* UiState.swift */; };
+		2163FFE22B6DA0EB00878E7B /* RecipientUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFE12B6DA0EB00878E7B /* RecipientUiState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +138,9 @@
 		2163FFD52B6D77B400878E7B /* TransactionsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsSection.swift; sourceTree = "<group>"; };
 		2163FFD72B6D914E00878E7B /* OptionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionItem.swift; sourceTree = "<group>"; };
 		2163FFDA2B6D960400878E7B /* Divider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divider.swift; sourceTree = "<group>"; };
+		2163FFDC2B6D9C1500878E7B /* RecipientScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientScreenModel.swift; sourceTree = "<group>"; };
+		2163FFDF2B6D9CA900878E7B /* UiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiState.swift; sourceTree = "<group>"; };
+		2163FFE12B6DA0EB00878E7B /* RecipientUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientUiState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +235,7 @@
 				2163FF612B6C2A4200878E7B /* Main */,
 				2163FF622B6C2A4A00878E7B /* Screens */,
 				2163FF632B6C2A5300878E7B /* Views */,
+				2163FFDE2B6D9C8F00878E7B /* Common */,
 				2163FF642B6C2A6500878E7B /* Service */,
 			);
 			path = Rimittance;
@@ -420,6 +427,8 @@
 			isa = PBXGroup;
 			children = (
 				2163FFB22B6C57E600878E7B /* RecipientScreen.swift */,
+				2163FFDC2B6D9C1500878E7B /* RecipientScreenModel.swift */,
+				2163FFE12B6DA0EB00878E7B /* RecipientUiState.swift */,
 			);
 			path = Recipient;
 			sourceTree = "<group>";
@@ -447,6 +456,14 @@
 				2163FFDA2B6D960400878E7B /* Divider.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		2163FFDE2B6D9C8F00878E7B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2163FFDF2B6D9CA900878E7B /* UiState.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -602,6 +619,7 @@
 				2163FFAF2B6C57CC00878E7B /* SendOptionsScreen.swift in Sources */,
 				2163FF752B6C31E600878E7B /* Color.swift in Sources */,
 				2163FFD82B6D914E00878E7B /* OptionItem.swift in Sources */,
+				2163FFE02B6D9CA900878E7B /* UiState.swift in Sources */,
 				2163FFA02B6C49AC00878E7B /* Recipient.swift in Sources */,
 				2163FFC32B6D472300878E7B /* CircularProgress.swift in Sources */,
 				2163FFC92B6D4B4C00878E7B /* SearchTextField.swift in Sources */,
@@ -626,6 +644,7 @@
 				2163FFDB2B6D960400878E7B /* Divider.swift in Sources */,
 				2163FFB72B6C57FA00878E7B /* InvoiceScreen.swift in Sources */,
 				2163FF9A2B6C483F00878E7B /* RecipientRepo.swift in Sources */,
+				2163FFE22B6DA0EB00878E7B /* RecipientUiState.swift in Sources */,
 				2163FFD62B6D77B400878E7B /* TransactionsSection.swift in Sources */,
 				2163FFBB2B6C591400878E7B /* AppDelegate.swift in Sources */,
 				2163FF7B2B6C323D00878E7B /* Text.swift in Sources */,
@@ -633,6 +652,7 @@
 				2163FF712B6C2D8F00878E7B /* NavigationCoordinator.swift in Sources */,
 				2163FF6F2B6C2D8400878E7B /* CoordinatorViewStackTrigger.swift in Sources */,
 				2163FF9E2B6C485200878E7B /* WalletRepo.swift in Sources */,
+				2163FFDD2B6D9C1500878E7B /* RecipientScreenModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

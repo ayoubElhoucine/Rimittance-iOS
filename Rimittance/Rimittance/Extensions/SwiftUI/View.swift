@@ -9,6 +9,11 @@ import SwiftUI
 import Combine
 
 extension View {
+    
+    func popBack() {
+        NavigationCoordinator.popBack(count: 1, home: false)
+    }
+    
     func popBack(count: Int = 1, home: Bool = false) {
         NavigationCoordinator.popBack(count: count, home: home)
     }

@@ -8,8 +8,51 @@
 import SwiftUI
 
 struct RecipientScreen: View {
+    @StateObject private var model = Model()
+    
+    private let pages = [RecipientPages.previous, RecipientPages.new]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScreenLayout {
+            HeaderView(title: "who_sending".localized, didBack: popBack)
+        } contentFactory: { insets in
+            ScrollView(showsIndicators: false) {
+                VStack(spacing: 0) {
+                    PagesTabSection()
+                    SearchTextField(didChange: model.filter).padding(.horizontal, 16)
+                }.padding(insets)
+            }
+        }
+    }
+    
+    @ViewBuilder
+    private func PagesTabSection() -> some View {
+        HStack(spacing: 0) {
+            ForEach(0 ..< pages.count, id: \.self) { index in
+                let item = pages[index]
+                PageItem(title: item.title, isSelected: model.selectedPage == item) {
+                    model.setPage(item)
+                }
+            }
+        }
+        .padding(2)
+        .frame(maxWidth: .infinity)
+        .frame(height: 46)
+        .background(RoundedRectangle(cornerRadius: 8).fill(Color.primary05))
+        .padding(16)
+    }
+    
+    @ViewBuilder
+    private func PageItem(title: String, isSelected: Bool, didClick: @escaping () -> Void) -> some View {
+        Button(action: didClick) {
+            ZStack {
+                Text(title).font(isSelected ? .white : .primary100, .medium, 14)
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(isSelected ? Color.primary70 : .clear)
+            .clipShape(RoundedRectangle(cornerRadius: 6))
+            .padding(2)
+        }
     }
 }
 

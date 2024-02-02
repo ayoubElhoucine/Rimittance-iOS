@@ -14,7 +14,7 @@ struct HomeScreen: View {
         ScreenLayout(headerHeight: 0, color: .primary05) {
             EmptyView()
         } contentFactory: { insets in
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 VStack(spacing: 0) {
                     UserInfoSection()
                     BalanceSection()

@@ -12,10 +12,10 @@ fileprivate enum SendOptions {
     case toMonecoBalance, bankTranser, sendToAfrica
     
     var rawValue: (title: String, icon: String) {
-        switch self {
-        case .toMonecoBalance: return ("to_moneco_balance".localized, "ic_account")
-        case .bankTranser: return ("bank_transfer".localized, "ic_market")
-        case .sendToAfrica: return ("send_to_africa".localized, "ic_web")
+        return switch self {
+        case .toMonecoBalance: ("to_moneco_balance".localized, "ic_account")
+        case .bankTranser: ("bank_transfer".localized, "ic_market")
+        case .sendToAfrica: ("send_to_africa".localized, "ic_web")
         }
     }
 }
@@ -26,7 +26,7 @@ struct SendOptionsScreen: View {
     
     var body: some View {
         ScreenLayout {
-            HeaderView(title: "send_to_africa".localized, didClose: { popBack() })
+            HeaderView(title: "send_to_africa".localized, didClose: popBack)
         } contentFactory: { insets in
             LazyVStack(spacing: 0) {
                 Spacer().asDivider()

@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct SearchTextField: View {
-    @Binding var value: String
-    let onChange: (String) -> Void
+    
+    let didChange: (String) -> Void
+    
+    @State private var value: String = ""
     
     var body: some View {
         HStack(spacing: 12) {
@@ -20,9 +22,9 @@ struct SearchTextField: View {
                 .scaledToFit()
                 .frame(width: 14, height: 14)
             TextField("search".localized, text: $value)
-                .font(.custom("Outfit-Regular", size: 15))
+                .font(.custom("Outfit-Regular", size: 14))
                 .autocorrectionDisabled(true)
-                .onChange(of: value, perform: onChange)
+                .onChange(of: value, perform: didChange)
                 .submitLabel(.done)
         }
         .padding(.horizontal, 16)
