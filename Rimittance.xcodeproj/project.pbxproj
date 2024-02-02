@@ -58,6 +58,8 @@
 		2163FFD22B6D5D7800878E7B /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFD12B6D5D7800878E7B /* NavigationBarView.swift */; };
 		2163FFD42B6D6C7300878E7B /* HomeActionsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFD32B6D6C7300878E7B /* HomeActionsSection.swift */; };
 		2163FFD62B6D77B400878E7B /* TransactionsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFD52B6D77B400878E7B /* TransactionsSection.swift */; };
+		2163FFD82B6D914E00878E7B /* OptionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFD72B6D914E00878E7B /* OptionItem.swift */; };
+		2163FFDB2B6D960400878E7B /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFDA2B6D960400878E7B /* Divider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +133,8 @@
 		2163FFD12B6D5D7800878E7B /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		2163FFD32B6D6C7300878E7B /* HomeActionsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeActionsSection.swift; sourceTree = "<group>"; };
 		2163FFD52B6D77B400878E7B /* TransactionsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsSection.swift; sourceTree = "<group>"; };
+		2163FFD72B6D914E00878E7B /* OptionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionItem.swift; sourceTree = "<group>"; };
+		2163FFDA2B6D960400878E7B /* Divider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,6 +355,7 @@
 		2163FF632B6C2A5300878E7B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2163FFD92B6D95FA00878E7B /* Modifiers */,
 				2163FFBC2B6D077C00878E7B /* ScreenLayout.swift */,
 				2163FFBE2B6D089C00878E7B /* HeaderView.swift */,
 				2163FFC02B6D0DF700878E7B /* MyButton.swift */,
@@ -406,6 +411,7 @@
 			children = (
 				2163FFAE2B6C57CC00878E7B /* SendOptionsScreen.swift */,
 				2163FFB02B6C57DC00878E7B /* SendDestinationScreen.swift */,
+				2163FFD72B6D914E00878E7B /* OptionItem.swift */,
 			);
 			path = SendOptions;
 			sourceTree = "<group>";
@@ -433,6 +439,14 @@
 				2163FFB82B6C581000878E7B /* SuccessScreen.swift */,
 			);
 			path = Invoice;
+			sourceTree = "<group>";
+		};
+		2163FFD92B6D95FA00878E7B /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				2163FFDA2B6D960400878E7B /* Divider.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -587,6 +601,7 @@
 				2163FFC72B6D48FC00878E7B /* FooterView.swift in Sources */,
 				2163FFAF2B6C57CC00878E7B /* SendOptionsScreen.swift in Sources */,
 				2163FF752B6C31E600878E7B /* Color.swift in Sources */,
+				2163FFD82B6D914E00878E7B /* OptionItem.swift in Sources */,
 				2163FFA02B6C49AC00878E7B /* Recipient.swift in Sources */,
 				2163FFC32B6D472300878E7B /* CircularProgress.swift in Sources */,
 				2163FFC92B6D4B4C00878E7B /* SearchTextField.swift in Sources */,
@@ -608,6 +623,7 @@
 				2163FF792B6C323000878E7B /* View.swift in Sources */,
 				2163FFBF2B6D089C00878E7B /* HeaderView.swift in Sources */,
 				2163FFD22B6D5D7800878E7B /* NavigationBarView.swift in Sources */,
+				2163FFDB2B6D960400878E7B /* Divider.swift in Sources */,
 				2163FFB72B6C57FA00878E7B /* InvoiceScreen.swift in Sources */,
 				2163FF9A2B6C483F00878E7B /* RecipientRepo.swift in Sources */,
 				2163FFD62B6D77B400878E7B /* TransactionsSection.swift in Sources */,

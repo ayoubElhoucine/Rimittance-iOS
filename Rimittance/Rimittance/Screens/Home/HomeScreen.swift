@@ -27,7 +27,7 @@ struct HomeScreen: View {
             VStack {
                 Spacer()
                 NavigationBarView {
-                    
+                    pushScreen(.sendOptions)
                 }.padding(.bottom, insets.bottom)
             }
         }

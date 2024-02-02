@@ -53,7 +53,7 @@ extension HomeScreen {
                                 .scaledToFit()
                                 .frame(width: 24)
                         }
-                    Text(title).font(.primary100, .medium, 16)
+                    Text(title).font(.primary100, .medium, 14)
                 }
                 Spacer()
             }

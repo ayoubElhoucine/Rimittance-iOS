@@ -16,7 +16,7 @@ extension HomeScreen {
                     ForEach(0 ..< 4, id: \.self) { index in
                         TransationItem()
                         if index < 3 {
-                            Divider()
+                            Spacer().asDivider()
                         }
                     }
                 }
@@ -46,14 +46,6 @@ extension HomeScreen {
                 Spacer()
                 Text("€ 150").font(.grey100, .medium, 14)
             }.padding(18)
-        }
-        
-        @ViewBuilder
-        private func Divider() -> some View {
-            Spacer()
-                .frame(maxWidth: .infinity)
-                .frame(height: 1)
-                .background(Color.grey05)
         }
     }
 }

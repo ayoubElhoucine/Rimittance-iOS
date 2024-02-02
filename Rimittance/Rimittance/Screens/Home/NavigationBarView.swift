@@ -68,8 +68,8 @@ extension HomeScreen {
         }
         
         @ViewBuilder
-        private func SendItem(didClick: () -> Void) -> some View {
-            ZStack {
+        private func SendItem(didClick: @escaping () -> Void) -> some View {
+            Button(action: didClick) {
                 Circle()
                     .fill(Color.accent100)
                     .shadow(color: .grey15, radius: 6)
