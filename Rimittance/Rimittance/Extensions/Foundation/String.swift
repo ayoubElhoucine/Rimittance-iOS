@@ -15,11 +15,20 @@ extension String {
     }
     
     func decode<T: Decodable>(_ type : T.Type) -> T? {
-        do {
-            return try? JSONDecoder().decode(type, from: Data(self.utf8))
-        } catch {
-            print("couldn't parse json!")
-            return nil
+        return try? JSONDecoder().decode(type, from: Data(self.utf8))
+    }
+}
+
+extension String {
+    // get country flag with country code
+    var flag: String {
+        get {
+            let base : UInt32 = 127397
+            var flag = ""
+            for v in self.unicodeScalars {
+                flag.unicodeScalars.append(UnicodeScalar(base + v.value)!)
+            }
+            return flag
         }
     }
 }

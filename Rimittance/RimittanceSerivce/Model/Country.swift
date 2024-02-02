@@ -19,3 +19,31 @@ struct Country: Decodable {
         case currencyCode = "currency_code"
     }
 }
+
+extension Country {
+    
+    var iso: String {
+        get {
+            return switch(name) {
+            case "Benin": "BJ"
+            case "Morocco": "MA"
+            case "Togo": "TG"
+            case "Senegal": "SN"
+            default: ""
+            }
+        }
+    }
+    
+    var code: String {
+        get {
+            return switch(name) {
+            case "Benin": "229"
+            case "Morocco": "212"
+            case "Togo": "228"
+            case "Senegal": "221"
+            default: ""
+            }
+        }
+    }
+    
+}

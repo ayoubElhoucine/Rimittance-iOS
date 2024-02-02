@@ -53,6 +53,7 @@
 		2163FFC52B6D482400878E7B /* FailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFC42B6D482400878E7B /* FailView.swift */; };
 		2163FFC72B6D48FC00878E7B /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFC62B6D48FC00878E7B /* FooterView.swift */; };
 		2163FFC92B6D4B4C00878E7B /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFC82B6D4B4C00878E7B /* SearchTextField.swift */; };
+		2163FFCB2B6D517900878E7B /* CountrySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFCA2B6D517900878E7B /* CountrySelector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,7 @@
 		2163FFC42B6D482400878E7B /* FailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailView.swift; sourceTree = "<group>"; };
 		2163FFC62B6D48FC00878E7B /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		2163FFC82B6D4B4C00878E7B /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		2163FFCA2B6D517900878E7B /* CountrySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySelector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -348,6 +350,7 @@
 				2163FFC42B6D482400878E7B /* FailView.swift */,
 				2163FFC62B6D48FC00878E7B /* FooterView.swift */,
 				2163FFC82B6D4B4C00878E7B /* SearchTextField.swift */,
+				2163FFCA2B6D517900878E7B /* CountrySelector.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -578,6 +581,7 @@
 				2163FF6D2B6C2D7A00878E7B /* CoordinatorView.swift in Sources */,
 				2163FFB12B6C57DC00878E7B /* SendDestinationScreen.swift in Sources */,
 				2163FFB32B6C57E600878E7B /* RecipientScreen.swift in Sources */,
+				2163FFCB2B6D517900878E7B /* CountrySelector.swift in Sources */,
 				2163FFA22B6C4A8E00878E7B /* Country.swift in Sources */,
 				2163FFB52B6C57F100878E7B /* WalletOptionsScreen.swift in Sources */,
 				2163FF9C2B6C484900878E7B /* CountryRepo.swift in Sources */,
