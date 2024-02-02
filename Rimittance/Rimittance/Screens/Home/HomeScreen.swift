@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct HomeScreen: View {
+    @StateObject private var model = Model()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScreenLayout {
+            EmptyView()
+        } contentFactory: { insets in
+            
+        }
     }
 }
 

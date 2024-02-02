@@ -54,6 +54,8 @@
 		2163FFC72B6D48FC00878E7B /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFC62B6D48FC00878E7B /* FooterView.swift */; };
 		2163FFC92B6D4B4C00878E7B /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFC82B6D4B4C00878E7B /* SearchTextField.swift */; };
 		2163FFCB2B6D517900878E7B /* CountrySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFCA2B6D517900878E7B /* CountrySelector.swift */; };
+		2163FFD02B6D5C9800878E7B /* HomeScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFCF2B6D5C9800878E7B /* HomeScreenModel.swift */; };
+		2163FFD22B6D5D7800878E7B /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFD12B6D5D7800878E7B /* NavigationBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +125,8 @@
 		2163FFC62B6D48FC00878E7B /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		2163FFC82B6D4B4C00878E7B /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		2163FFCA2B6D517900878E7B /* CountrySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySelector.swift; sourceTree = "<group>"; };
+		2163FFCF2B6D5C9800878E7B /* HomeScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenModel.swift; sourceTree = "<group>"; };
+		2163FFD12B6D5D7800878E7B /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -385,6 +389,8 @@
 			isa = PBXGroup;
 			children = (
 				2163FFAC2B6C57BA00878E7B /* HomeScreen.swift */,
+				2163FFCF2B6D5C9800878E7B /* HomeScreenModel.swift */,
+				2163FFD12B6D5D7800878E7B /* NavigationBarView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -580,6 +586,7 @@
 				2163FFC92B6D4B4C00878E7B /* SearchTextField.swift in Sources */,
 				2163FF6D2B6C2D7A00878E7B /* CoordinatorView.swift in Sources */,
 				2163FFB12B6C57DC00878E7B /* SendDestinationScreen.swift in Sources */,
+				2163FFD02B6D5C9800878E7B /* HomeScreenModel.swift in Sources */,
 				2163FFB32B6C57E600878E7B /* RecipientScreen.swift in Sources */,
 				2163FFCB2B6D517900878E7B /* CountrySelector.swift in Sources */,
 				2163FFA22B6C4A8E00878E7B /* Country.swift in Sources */,
@@ -593,6 +600,7 @@
 				2163FFB92B6C581000878E7B /* SuccessScreen.swift in Sources */,
 				2163FF792B6C323000878E7B /* View.swift in Sources */,
 				2163FFBF2B6D089C00878E7B /* HeaderView.swift in Sources */,
+				2163FFD22B6D5D7800878E7B /* NavigationBarView.swift in Sources */,
 				2163FFB72B6C57FA00878E7B /* InvoiceScreen.swift in Sources */,
 				2163FF9A2B6C483F00878E7B /* RecipientRepo.swift in Sources */,
 				2163FFBB2B6C591400878E7B /* AppDelegate.swift in Sources */,
