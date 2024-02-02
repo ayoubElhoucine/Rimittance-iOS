@@ -22,7 +22,7 @@ fileprivate enum Actions {
 }
 
 extension HomeScreen {
-    struct HomeActionsView: View {
+    struct HomeActionsSection: View {
         
         private let actions = [Actions.topUp, Actions.withdraw, Actions.getIban, Actions.analytics]
         private let adaptiveColumn = [
@@ -35,7 +35,7 @@ extension HomeScreen {
                 ForEach(actions, id: \.self) { item in
                     ActionItem(title: item.rawValue.title, icon: item.rawValue.icon)
                 }
-            }
+            }.padding(16)
         }
         
         @ViewBuilder
@@ -58,12 +58,12 @@ extension HomeScreen {
                 Spacer()
             }
             .frame(maxWidth: .infinity)
-            .padding(16)
+            .padding(18)
             .background(RoundedRectangle(cornerRadius: 16).fill(.white).shadow(color: .grey05, radius: 10))
         }
     }
 }
 
 #Preview {
-    HomeScreen.HomeActionsView()
+    HomeScreen.HomeActionsSection()
 }

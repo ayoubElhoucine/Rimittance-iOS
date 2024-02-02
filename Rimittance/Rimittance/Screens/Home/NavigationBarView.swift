@@ -49,7 +49,7 @@ extension HomeScreen {
                 .frame(minWidth: 0, maxWidth: .infinity)
             }
             .frame(maxWidth: .infinity)
-            .frame(height: 64)
+            .frame(height: 68)
             .background(.white)
         }
         
@@ -61,7 +61,7 @@ extension HomeScreen {
                     .renderingMode(.template)
                     .foregroundColor(isSeleted ? .primary100 : .grey50)
                     .scaledToFit()
-                    .frame(width: 20)
+                    .frame(width: 22)
                 Text(title)
                     .font(isSeleted ? .primary100 : .grey50, isSeleted ? .semiBold : .regular, 12)
             }.frame(maxWidth: .infinity)
