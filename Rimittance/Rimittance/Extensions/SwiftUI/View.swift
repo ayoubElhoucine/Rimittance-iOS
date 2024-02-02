@@ -28,7 +28,7 @@ extension View {
     }
 }
 
-extension View {
+extension Spacer {
     func asDivider() -> some View {
         self.modifier(AsDividerModifier())
     }

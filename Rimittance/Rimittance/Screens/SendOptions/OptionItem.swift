@@ -22,7 +22,7 @@ struct OptionItem: View {
                         .renderingMode(.template)
                         .foregroundColor(.primary100)
                         .scaledToFit()
-                        .frame(width: 18)
+                        .frame(width: 16)
                 }
             Text(title).font(.grey100, .medium, 16)
             Spacer()
