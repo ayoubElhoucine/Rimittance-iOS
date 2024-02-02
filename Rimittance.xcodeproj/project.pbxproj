@@ -49,6 +49,10 @@
 		2163FFBD2B6D077C00878E7B /* ScreenLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFBC2B6D077C00878E7B /* ScreenLayout.swift */; };
 		2163FFBF2B6D089C00878E7B /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFBE2B6D089C00878E7B /* HeaderView.swift */; };
 		2163FFC12B6D0DF700878E7B /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFC02B6D0DF700878E7B /* MyButton.swift */; };
+		2163FFC32B6D472300878E7B /* CircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFC22B6D472300878E7B /* CircularProgress.swift */; };
+		2163FFC52B6D482400878E7B /* FailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFC42B6D482400878E7B /* FailView.swift */; };
+		2163FFC72B6D48FC00878E7B /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFC62B6D48FC00878E7B /* FooterView.swift */; };
+		2163FFC92B6D4B4C00878E7B /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFC82B6D4B4C00878E7B /* SearchTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +117,10 @@
 		2163FFBC2B6D077C00878E7B /* ScreenLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenLayout.swift; sourceTree = "<group>"; };
 		2163FFBE2B6D089C00878E7B /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		2163FFC02B6D0DF700878E7B /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
+		2163FFC22B6D472300878E7B /* CircularProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgress.swift; sourceTree = "<group>"; };
+		2163FFC42B6D482400878E7B /* FailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailView.swift; sourceTree = "<group>"; };
+		2163FFC62B6D48FC00878E7B /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		2163FFC82B6D4B4C00878E7B /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -336,6 +344,10 @@
 				2163FFBC2B6D077C00878E7B /* ScreenLayout.swift */,
 				2163FFBE2B6D089C00878E7B /* HeaderView.swift */,
 				2163FFC02B6D0DF700878E7B /* MyButton.swift */,
+				2163FFC22B6D472300878E7B /* CircularProgress.swift */,
+				2163FFC42B6D482400878E7B /* FailView.swift */,
+				2163FFC62B6D48FC00878E7B /* FooterView.swift */,
+				2163FFC82B6D4B4C00878E7B /* SearchTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -551,14 +563,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2163FFC52B6D482400878E7B /* FailView.swift in Sources */,
 				2163FFA42B6C4AC400878E7B /* Wallet.swift in Sources */,
 				2163FF922B6C45B100878E7B /* NetworkService.swift in Sources */,
 				2163FFAD2B6C57BA00878E7B /* HomeScreen.swift in Sources */,
 				2163FF962B6C46DE00878E7B /* String.swift in Sources */,
 				2163FF732B6C31D200878E7B /* Observer.swift in Sources */,
+				2163FFC72B6D48FC00878E7B /* FooterView.swift in Sources */,
 				2163FFAF2B6C57CC00878E7B /* SendOptionsScreen.swift in Sources */,
 				2163FF752B6C31E600878E7B /* Color.swift in Sources */,
 				2163FFA02B6C49AC00878E7B /* Recipient.swift in Sources */,
+				2163FFC32B6D472300878E7B /* CircularProgress.swift in Sources */,
+				2163FFC92B6D4B4C00878E7B /* SearchTextField.swift in Sources */,
 				2163FF6D2B6C2D7A00878E7B /* CoordinatorView.swift in Sources */,
 				2163FFB12B6C57DC00878E7B /* SendDestinationScreen.swift in Sources */,
 				2163FFB32B6C57E600878E7B /* RecipientScreen.swift in Sources */,
