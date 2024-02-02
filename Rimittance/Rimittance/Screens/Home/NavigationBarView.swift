@@ -10,7 +10,7 @@ import SwiftUI
 fileprivate enum Tabs {
     case home, cards, send, tonotines, settings
     
-    var rawValue: (String, String) {
+    var rawValue: (title: String, icon: String) {
         switch self {
         case .home: return ("home".localized, "ic_home")
         case .cards: return ("cards".localized, "ic_credit")
@@ -37,8 +37,8 @@ extension HomeScreen {
                             SendItem(didClick: didSelect)
                         } else {
                             TabItem(
-                                title: item.rawValue.0,
-                                icon: item.rawValue.1,
+                                title: item.rawValue.title,
+                                icon: item.rawValue.icon,
                                 isSeleted: item == .home,
                                 didClick: {}
                             )

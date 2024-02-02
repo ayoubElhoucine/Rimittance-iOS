@@ -56,6 +56,7 @@
 		2163FFCB2B6D517900878E7B /* CountrySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFCA2B6D517900878E7B /* CountrySelector.swift */; };
 		2163FFD02B6D5C9800878E7B /* HomeScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFCF2B6D5C9800878E7B /* HomeScreenModel.swift */; };
 		2163FFD22B6D5D7800878E7B /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFD12B6D5D7800878E7B /* NavigationBarView.swift */; };
+		2163FFD42B6D6C7300878E7B /* HomeActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFD32B6D6C7300878E7B /* HomeActionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,7 @@
 		2163FFCA2B6D517900878E7B /* CountrySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySelector.swift; sourceTree = "<group>"; };
 		2163FFCF2B6D5C9800878E7B /* HomeScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenModel.swift; sourceTree = "<group>"; };
 		2163FFD12B6D5D7800878E7B /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		2163FFD32B6D6C7300878E7B /* HomeActionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeActionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -391,6 +393,7 @@
 				2163FFAC2B6C57BA00878E7B /* HomeScreen.swift */,
 				2163FFCF2B6D5C9800878E7B /* HomeScreenModel.swift */,
 				2163FFD12B6D5D7800878E7B /* NavigationBarView.swift */,
+				2163FFD32B6D6C7300878E7B /* HomeActionsView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -595,6 +598,7 @@
 				2163FF982B6C47F100878E7B /* Double.swift in Sources */,
 				2163FFBD2B6D077C00878E7B /* ScreenLayout.swift in Sources */,
 				2163FF942B6C466C00878E7B /* EscapingSlashes.swift in Sources */,
+				2163FFD42B6D6C7300878E7B /* HomeActionsView.swift in Sources */,
 				2163FFC12B6D0DF700878E7B /* MyButton.swift in Sources */,
 				2163FF772B6C31F200878E7B /* Font.swift in Sources */,
 				2163FFB92B6C581000878E7B /* SuccessScreen.swift in Sources */,
