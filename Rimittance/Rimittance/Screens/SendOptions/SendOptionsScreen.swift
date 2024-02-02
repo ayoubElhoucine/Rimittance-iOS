@@ -31,10 +31,16 @@ struct SendOptionsScreen: View {
             LazyVStack(spacing: 0) {
                 Spacer().asDivider()
                 ForEach(options, id: \.self) { item in
-                    OptionItem(title: item.rawValue.title, icon: item.rawValue.icon)
+                    OptionItem(title: item.rawValue.title, icon: item.rawValue.icon) {
+                        if item == .sendToAfrica {
+                            pushScreen(.sendDestination)
+                        }
+                    }
                     Spacer().asDivider()
                 }
-            }.padding(insets)
+            }
+            .padding(insets)
+            .padding(.top, 16)
         }
     }
 }

@@ -30,10 +30,16 @@ struct SendDestinationScreen: View {
             LazyVStack(spacing: 0) {
                 Spacer().asDivider()
                 ForEach(options, id: \.self) { item in
-                    OptionItem(title: item.title, icon: "ic_arrow_send")
+                    OptionItem(title: item.title, icon: "ic_arrow_send") {
+                        if item == .mobileWallet {
+                            pushScreen(.recipient)
+                        }
+                    }
                     Spacer().asDivider()
                 }
-            }.padding(insets)
+            }
+            .padding(insets)
+            .padding(.top, 16)
         }
     }
 }

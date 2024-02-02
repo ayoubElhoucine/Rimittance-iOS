@@ -24,7 +24,7 @@ struct HeaderView: View {
     }
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 5) {
+        VStack(alignment: .leading, spacing: 10) {
             HStack {
                 if let didBack = didBack {
                     ItemView(icon: "ic_back", didClick: didBack)
