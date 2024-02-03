@@ -56,7 +56,7 @@ struct InvoiceScreen: View {
             FeeItem(title: "transfer_fees", value: 0.0)
             FeeItem(title: "conversion_rate", value: model.getConversionRate(), currency: "XOF")
             FeeItem(title: "you_spend_total", value: totalToSpend)
-            Spacer().asDashed()
+            Spacer().asDashed().padding(.vertical, 10)
             HStack {
                 Text("recipient_gets".localized).font(.grey50, .regular, 14)
                 Spacer()

@@ -20,7 +20,9 @@ extension InvoiceScreen {
                 VStack(spacing: 0) {
                     HStack {
                         TextField("0.0", text: $value)
+                            .accentColor(.grey50)
                             .font(.custom(Font.RimittanceFont.regular.rawValue, size: 18))
+                            .keyboardType(.numberPad)
                             .autocorrectionDisabled(true)
                             .onChange(of: value, perform: model.calculate)
                             .submitLabel(.done)

@@ -34,6 +34,8 @@ public struct ScreenLayout<Header: View, Content: View>: View {
                 
                 header
             }
-        }.background(color)
+        }
+        .background(color)
+        .ignoresSafeArea(.keyboard)
     }
 }

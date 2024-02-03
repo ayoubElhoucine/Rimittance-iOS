@@ -12,7 +12,7 @@ struct AsDashedModifier: ViewModifier {
     
     func body(content: Content) -> some View {
         Line()
-            .stroke(style: StrokeStyle(lineWidth: 1, dash: [3]))
+            .stroke(style: StrokeStyle(lineWidth: 1, dash: [5]))
             .frame(height: 1)
             .foregroundColor(color)
     }

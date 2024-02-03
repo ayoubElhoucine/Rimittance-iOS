@@ -29,7 +29,9 @@ struct RecipientScreen: View {
                     case .new: 
                         NewRecipientPage(model: model)
                     }
-                }.padding(insets)
+                }
+                .padding(.top, insets.top)
+                .padding(.bottom, 30)
             }.padding(.bottom, insets.bottom + 40)
             FooterSection().padding(.bottom, insets.bottom)
         }
