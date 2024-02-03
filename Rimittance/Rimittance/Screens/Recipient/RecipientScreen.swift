@@ -47,7 +47,7 @@ struct RecipientScreen: View {
                 }
             }
         }
-        .padding(2)
+        .padding(1)
         .frame(maxWidth: .infinity)
         .frame(height: 46)
         .background(RoundedRectangle(cornerRadius: 8).fill(Color.primary05))

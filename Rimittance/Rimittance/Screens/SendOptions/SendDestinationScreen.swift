@@ -27,7 +27,7 @@ struct SendDestinationScreen: View {
         ScreenLayout {
             HeaderView(title: "send_to_africa".localized, didBack: popBack)
         } contentFactory: { insets in
-            VStack {
+            VStack(spacing: 0) {
                 Spacer().asDivider()
                 ForEach(options, id: \.self) { item in
                     OptionItem(title: item.title, icon: "ic_arrow_send") {
