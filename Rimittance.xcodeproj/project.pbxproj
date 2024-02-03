@@ -65,6 +65,7 @@
 		2163FFE22B6DA0EB00878E7B /* RecipientUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFE12B6DA0EB00878E7B /* RecipientUiState.swift */; };
 		2163FFE42B6DB4B000878E7B /* PreviousRecipientPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFE32B6DB4B000878E7B /* PreviousRecipientPage.swift */; };
 		2163FFE62B6DBB7E00878E7B /* NewRecipientPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFE52B6DBB7E00878E7B /* NewRecipientPage.swift */; };
+		2163FFE82B6E734B00878E7B /* WalletOptionsScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFE72B6E734B00878E7B /* WalletOptionsScreenModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +146,7 @@
 		2163FFE12B6DA0EB00878E7B /* RecipientUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientUiState.swift; sourceTree = "<group>"; };
 		2163FFE32B6DB4B000878E7B /* PreviousRecipientPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousRecipientPage.swift; sourceTree = "<group>"; };
 		2163FFE52B6DBB7E00878E7B /* NewRecipientPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipientPage.swift; sourceTree = "<group>"; };
+		2163FFE72B6E734B00878E7B /* WalletOptionsScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletOptionsScreenModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -443,6 +445,7 @@
 			isa = PBXGroup;
 			children = (
 				2163FFB42B6C57F100878E7B /* WalletOptionsScreen.swift */,
+				2163FFE72B6E734B00878E7B /* WalletOptionsScreenModel.swift */,
 			);
 			path = WalletOptions;
 			sourceTree = "<group>";
@@ -618,6 +621,7 @@
 				2163FFC52B6D482400878E7B /* FailView.swift in Sources */,
 				2163FFA42B6C4AC400878E7B /* Wallet.swift in Sources */,
 				2163FF922B6C45B100878E7B /* NetworkService.swift in Sources */,
+				2163FFE82B6E734B00878E7B /* WalletOptionsScreenModel.swift in Sources */,
 				2163FFAD2B6C57BA00878E7B /* HomeScreen.swift in Sources */,
 				2163FF962B6C46DE00878E7B /* String.swift in Sources */,
 				2163FF732B6C31D200878E7B /* Observer.swift in Sources */,

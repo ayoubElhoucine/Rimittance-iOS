@@ -68,7 +68,7 @@ extension RecipientScreen {
                         .padding(.horizontal, 16)
                         .frame(height: 52)
                         .frame(maxWidth: .infinity)
-                        .background(RoundedRectangle(cornerRadius: 8).strokeBorder(Color.grey25, lineWidth: 1))
+                        .background(RoundedRectangle(cornerRadius: 8).strokeBorder(Color.grey15, lineWidth: 1))
                     }.padding(.top, 12)
                 }
             }

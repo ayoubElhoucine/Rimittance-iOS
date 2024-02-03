@@ -20,7 +20,7 @@ struct FooterView: View {
         ZStack {
             MyButton(disabled: disabled, title: "next".localized, action: action)
                 .padding(16)
-        }.background(Color.white.shadow(color: .grey15, radius: 10))
+        }.background(Color.white.shadow(color: .grey15, radius: 4))
     }
 }
 

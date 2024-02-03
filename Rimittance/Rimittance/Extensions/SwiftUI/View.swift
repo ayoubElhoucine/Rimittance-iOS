@@ -21,16 +21,6 @@ extension View {
     func pushScreen(_ screen: NavigationCoordinator.Screens, withAnimation animation: NavigationCoordinator.TransitAnimation = .opacity) {
         NavigationCoordinator.pushScreen(screen, withAnimation: animation)
     }
-    
-    func pushPopup(_ screen: NavigationCoordinator.Screens, withAnimation animation: NavigationCoordinator.TransitAnimation = .fromBottom) {
-        NavigationCoordinator.pushScreen(screen, withAnimation: animation)
-    }
-    
-    func popupBackground() -> some View {
-        self.background(LinearGradient(gradient: Gradient(colors: [.black.opacity(0.3), .black.opacity(0.3), .black.opacity(0.3), .black.opacity(0.3), .black.opacity(0.3), .black.opacity(0.3), .black.opacity(0.3), .black.opacity(0.3),  .black.opacity(0.2), .black.opacity(0.1), .clear]), startPoint: .bottom, endPoint: .top).ignoresSafeArea().onTapGesture {
-            popBack()
-        })
-    }
 }
 
 extension Spacer {
