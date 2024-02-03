@@ -41,7 +41,7 @@ struct SendOptionsScreen: View {
             }
             .padding(insets)
             .padding(.top, 16)
-        }
+        }.setupDefaultBackHandler()
     }
 }
 

@@ -21,16 +21,16 @@ struct RecipientScreen: View {
                     PagesTabSection()
                     SearchTextField(didChange: model.filter).padding(.horizontal, 16)
                     switch model.selectedPage {
-                    case .previous: PreviousRecipientView(model: model) { recipient in
+                    case .previous: PreviousRecipientPage(model: model) { recipient in
                         pushScreen(.walletOptions(recipient))
                     }
-                    case .new: NewRecipientView(model: model) { recipient in
+                    case .new: NewRecipientPage(model: model) { recipient in
                         pushScreen(.walletOptions(recipient))
                     }
                     }
                 }.padding(insets)
             }
-        }
+        }.setupDefaultBackHandler()
     }
     
     @ViewBuilder

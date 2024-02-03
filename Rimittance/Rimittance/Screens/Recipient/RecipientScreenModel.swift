@@ -57,18 +57,26 @@ extension RecipientScreen {
         }
         
         func filter(_ text: String) {
-            let data = recipientList?.filter {
-                "\($0.id)\($0.name)\($0.country ?? "")\($0.mobileWallet ?? "")".lowercased().contains(text.lowercased())
-            }
-            if let data = data, !data.isEmpty {
+            if text.isEmpty, let data = recipientList {
                 previousUiState = .success(data)
             } else {
-                previousUiState = .empty
+                let data = recipientList?.filter {
+                    "\($0.id)\($0.name)\($0.country ?? "")\($0.mobileWallet ?? "")".lowercased().contains(text.lowercased())
+                }
+                if let data = data, !data.isEmpty {
+                    previousUiState = .success(data)
+                } else {
+                    previousUiState = .empty
+                }
             }
         }
         
-        func setPage(_ page: RecipientPages) {
-            selectedPage = page
+        func setPage(_ value: RecipientPages) {
+            selectedPage = value
+        }
+        
+        func setSelectedCountry(_ value: Country) {
+            selectedCountry = value
         }
     }
 }

@@ -9,7 +9,7 @@ import SwiftUI
 
 
 extension RecipientScreen {
-    struct PreviousRecipientView: View {
+    struct PreviousRecipientPage: View {
         
         @StateObject var model: Model
         let didSelect: (Recipient) -> Void
@@ -18,7 +18,7 @@ extension RecipientScreen {
             switch model.previousUiState {
             case .loading: Loading()
             case .empty: Empty()
-            case .success(let data): Success(data, didSelet: didSelect)
+            case .success(let data): Success(data, didSelect: didSelect)
             case .failed(_): FailView(action: model.retryGetRecipients).padding(.top, 50)
             }
         }
@@ -40,14 +40,14 @@ extension RecipientScreen {
         }
         
         @ViewBuilder
-        private func Success(_ data: [Recipient], didSelet: @escaping (Recipient) -> Void) -> some View {
+        private func Success(_ data: [Recipient], didSelect: @escaping (Recipient) -> Void) -> some View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("contact_phone".localized).font(.grey100, .medium, 14).padding(.horizontal, 16)
                 LazyVStack(spacing: 0) {
                     Spacer().asDivider()
                     ForEach(data, id: \.self) { item in
                         Button {
-                            didSelet(item)
+                            didSelect(item)
                         } label: {
                             HStack(spacing: 8) {
                                 RoundedRectangle(cornerRadius: 8).fill(Color.grey05)

@@ -63,8 +63,8 @@
 		2163FFDD2B6D9C1500878E7B /* RecipientScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFDC2B6D9C1500878E7B /* RecipientScreenModel.swift */; };
 		2163FFE02B6D9CA900878E7B /* UiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFDF2B6D9CA900878E7B /* UiState.swift */; };
 		2163FFE22B6DA0EB00878E7B /* RecipientUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFE12B6DA0EB00878E7B /* RecipientUiState.swift */; };
-		2163FFE42B6DB4B000878E7B /* PreviousRecipientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFE32B6DB4B000878E7B /* PreviousRecipientView.swift */; };
-		2163FFE62B6DBB7E00878E7B /* NewRecipientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFE52B6DBB7E00878E7B /* NewRecipientView.swift */; };
+		2163FFE42B6DB4B000878E7B /* PreviousRecipientPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFE32B6DB4B000878E7B /* PreviousRecipientPage.swift */; };
+		2163FFE62B6DBB7E00878E7B /* NewRecipientPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFE52B6DBB7E00878E7B /* NewRecipientPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,8 +143,8 @@
 		2163FFDC2B6D9C1500878E7B /* RecipientScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientScreenModel.swift; sourceTree = "<group>"; };
 		2163FFDF2B6D9CA900878E7B /* UiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiState.swift; sourceTree = "<group>"; };
 		2163FFE12B6DA0EB00878E7B /* RecipientUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientUiState.swift; sourceTree = "<group>"; };
-		2163FFE32B6DB4B000878E7B /* PreviousRecipientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousRecipientView.swift; sourceTree = "<group>"; };
-		2163FFE52B6DBB7E00878E7B /* NewRecipientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipientView.swift; sourceTree = "<group>"; };
+		2163FFE32B6DB4B000878E7B /* PreviousRecipientPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousRecipientPage.swift; sourceTree = "<group>"; };
+		2163FFE52B6DBB7E00878E7B /* NewRecipientPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipientPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -433,8 +433,8 @@
 				2163FFB22B6C57E600878E7B /* RecipientScreen.swift */,
 				2163FFDC2B6D9C1500878E7B /* RecipientScreenModel.swift */,
 				2163FFE12B6DA0EB00878E7B /* RecipientUiState.swift */,
-				2163FFE32B6DB4B000878E7B /* PreviousRecipientView.swift */,
-				2163FFE52B6DBB7E00878E7B /* NewRecipientView.swift */,
+				2163FFE32B6DB4B000878E7B /* PreviousRecipientPage.swift */,
+				2163FFE52B6DBB7E00878E7B /* NewRecipientPage.swift */,
 			);
 			path = Recipient;
 			sourceTree = "<group>";
@@ -624,7 +624,7 @@
 				2163FFC72B6D48FC00878E7B /* FooterView.swift in Sources */,
 				2163FFAF2B6C57CC00878E7B /* SendOptionsScreen.swift in Sources */,
 				2163FF752B6C31E600878E7B /* Color.swift in Sources */,
-				2163FFE42B6DB4B000878E7B /* PreviousRecipientView.swift in Sources */,
+				2163FFE42B6DB4B000878E7B /* PreviousRecipientPage.swift in Sources */,
 				2163FFD82B6D914E00878E7B /* OptionItem.swift in Sources */,
 				2163FFE02B6D9CA900878E7B /* UiState.swift in Sources */,
 				2163FFA02B6C49AC00878E7B /* Recipient.swift in Sources */,
@@ -644,7 +644,7 @@
 				2163FFD42B6D6C7300878E7B /* HomeActionsSection.swift in Sources */,
 				2163FFC12B6D0DF700878E7B /* MyButton.swift in Sources */,
 				2163FF772B6C31F200878E7B /* Font.swift in Sources */,
-				2163FFE62B6DBB7E00878E7B /* NewRecipientView.swift in Sources */,
+				2163FFE62B6DBB7E00878E7B /* NewRecipientPage.swift in Sources */,
 				2163FFB92B6C581000878E7B /* SuccessScreen.swift in Sources */,
 				2163FF792B6C323000878E7B /* View.swift in Sources */,
 				2163FFBF2B6D089C00878E7B /* HeaderView.swift in Sources */,

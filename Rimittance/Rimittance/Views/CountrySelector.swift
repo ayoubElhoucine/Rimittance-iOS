@@ -11,19 +11,16 @@ import SwiftUI
 struct CountrySelector: View {
     let selectedCountry: Country
     let countries: [Country]
-    let didSelectCountry: (Country) -> Void
+    let didSelect: (Country) -> Void
     
     var body: some View {
         Menu {
             ForEach(0 ..< countries.count, id: \.self) { index in
                 let country = countries[index]
                 Button {
-                    didSelectCountry(country)
+                    didSelect(country)
                 } label: {
-                    HStack(spacing: 10) {
-                        Text(selectedCountry.iso.flag)
-                        Text(selectedCountry.name).font(.grey100, .regular, 16)
-                    }
+                    Text("\(country.iso.flag)   \(country.name)").font(.grey100, .regular, 16)
                 }
             }
         } label: {
@@ -44,7 +41,7 @@ struct CountrySelector: View {
                     .strokeBorder(Color.grey25, lineWidth: 1)
             }
         }
-        .background(Color.grey15)
+        .background(.white)
         .cornerRadius(8)
     }
 }
