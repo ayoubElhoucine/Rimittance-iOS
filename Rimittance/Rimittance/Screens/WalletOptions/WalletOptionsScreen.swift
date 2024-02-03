@@ -26,6 +26,7 @@ struct WalletOptionsScreen: View {
                 Fail(action: model.retryGetWallet)
             }
         }
+        .setupDefaultBackHandler(home: true)
     }
     
     @ViewBuilder

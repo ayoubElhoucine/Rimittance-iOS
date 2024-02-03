@@ -29,6 +29,7 @@ struct InvoiceScreen: View {
             }.padding(insets)
             FooterSection().padding(insets)
         }
+        .setupDefaultBackHandler()
         .onTapGesture(perform: UIApplication.shared.endEditing)
         .asBottomSheetUI(show: $showConfirmationSheet) {
             ConfimrationSheet(recipient: recipient, sendingValue: model.uiState.data.receive) {

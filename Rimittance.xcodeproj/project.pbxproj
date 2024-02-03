@@ -470,8 +470,8 @@
 				2163FFED2B6E920100878E7B /* InvoiceScreenModel.swift */,
 				2163FFE92B6E845800878E7B /* InvoiceUiState.swift */,
 				2163FFEB2B6E84AF00878E7B /* MoneyInputSection.swift */,
-				2163FFB82B6C581000878E7B /* SuccessScreen.swift */,
 				2163FFF32B6EC0D200878E7B /* ConfimrationSheet.swift */,
+				2163FFB82B6C581000878E7B /* SuccessScreen.swift */,
 			);
 			path = Invoice;
 			sourceTree = "<group>";
