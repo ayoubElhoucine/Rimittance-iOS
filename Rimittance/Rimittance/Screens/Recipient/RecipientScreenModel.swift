@@ -46,6 +46,16 @@ extension RecipientScreen {
             }
         }
         
+        func retryGetRecipients() {
+            previousUiState = .loading
+            getRecipients()
+        }
+        
+        func retryGetCountries() {
+            newUiState = .loading
+            getCountries()
+        }
+        
         func filter(_ text: String) {
             let data = recipientList?.filter {
                 "\($0.id)\($0.name)\($0.country ?? "")\($0.mobileWallet ?? "")".lowercased().contains(text.lowercased())

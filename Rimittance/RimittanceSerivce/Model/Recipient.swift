@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Recipient: Decodable {
+struct Recipient: Decodable, Hashable {
     let id: String
     let name: String
     let country: String?

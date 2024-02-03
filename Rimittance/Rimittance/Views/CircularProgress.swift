@@ -14,7 +14,7 @@ struct CircularProgress: View {
     private let color: Color
     private let scale: CGFloat
     
-    init(color: Color = Color.primary100, scale: CGFloat = 1.2) {
+    init(color: Color = Color.grey70, scale: CGFloat = 1.2) {
         self.color = color
         self.scale = scale
     }

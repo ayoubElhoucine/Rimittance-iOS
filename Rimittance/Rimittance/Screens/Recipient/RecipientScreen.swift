@@ -20,6 +20,14 @@ struct RecipientScreen: View {
                 VStack(spacing: 0) {
                     PagesTabSection()
                     SearchTextField(didChange: model.filter).padding(.horizontal, 16)
+                    switch model.selectedPage {
+                    case .previous: PreviousRecipientView(model: model) { recipient in
+                        pushScreen(.walletOptions(recipient))
+                    }
+                    case .new: NewRecipientView(model: model) { recipient in
+                        pushScreen(.walletOptions(recipient))
+                    }
+                    }
                 }.padding(insets)
             }
         }
