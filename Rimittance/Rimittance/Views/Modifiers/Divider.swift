@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct AsDividerModifier: ViewModifier {
+    private let color: Color
+    
+    init(color: Color = .grey05) {
+        self.color = color
+    }
+    
     func body(content: Content) -> some View {
         content
             .frame(maxWidth: .infinity)

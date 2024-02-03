@@ -66,6 +66,10 @@
 		2163FFE42B6DB4B000878E7B /* PreviousRecipientPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFE32B6DB4B000878E7B /* PreviousRecipientPage.swift */; };
 		2163FFE62B6DBB7E00878E7B /* NewRecipientPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFE52B6DBB7E00878E7B /* NewRecipientPage.swift */; };
 		2163FFE82B6E734B00878E7B /* WalletOptionsScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFE72B6E734B00878E7B /* WalletOptionsScreenModel.swift */; };
+		2163FFEA2B6E845800878E7B /* InvoiceUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFE92B6E845800878E7B /* InvoiceUiState.swift */; };
+		2163FFEC2B6E84AF00878E7B /* MoneyInputSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFEB2B6E84AF00878E7B /* MoneyInputSection.swift */; };
+		2163FFEE2B6E920100878E7B /* InvoiceScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFED2B6E920100878E7B /* InvoiceScreenModel.swift */; };
+		2163FFF02B6EAF0600878E7B /* Dashed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFEF2B6EAF0600878E7B /* Dashed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +151,10 @@
 		2163FFE32B6DB4B000878E7B /* PreviousRecipientPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousRecipientPage.swift; sourceTree = "<group>"; };
 		2163FFE52B6DBB7E00878E7B /* NewRecipientPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipientPage.swift; sourceTree = "<group>"; };
 		2163FFE72B6E734B00878E7B /* WalletOptionsScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletOptionsScreenModel.swift; sourceTree = "<group>"; };
+		2163FFE92B6E845800878E7B /* InvoiceUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceUiState.swift; sourceTree = "<group>"; };
+		2163FFEB2B6E84AF00878E7B /* MoneyInputSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyInputSection.swift; sourceTree = "<group>"; };
+		2163FFED2B6E920100878E7B /* InvoiceScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceScreenModel.swift; sourceTree = "<group>"; };
+		2163FFEF2B6EAF0600878E7B /* Dashed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -454,6 +462,9 @@
 			isa = PBXGroup;
 			children = (
 				2163FFB62B6C57FA00878E7B /* InvoiceScreen.swift */,
+				2163FFED2B6E920100878E7B /* InvoiceScreenModel.swift */,
+				2163FFE92B6E845800878E7B /* InvoiceUiState.swift */,
+				2163FFEB2B6E84AF00878E7B /* MoneyInputSection.swift */,
 				2163FFB82B6C581000878E7B /* SuccessScreen.swift */,
 			);
 			path = Invoice;
@@ -463,6 +474,7 @@
 			isa = PBXGroup;
 			children = (
 				2163FFDA2B6D960400878E7B /* Divider.swift */,
+				2163FFEF2B6EAF0600878E7B /* Dashed.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -619,6 +631,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2163FFC52B6D482400878E7B /* FailView.swift in Sources */,
+				2163FFF02B6EAF0600878E7B /* Dashed.swift in Sources */,
 				2163FFA42B6C4AC400878E7B /* Wallet.swift in Sources */,
 				2163FF922B6C45B100878E7B /* NetworkService.swift in Sources */,
 				2163FFE82B6E734B00878E7B /* WalletOptionsScreenModel.swift in Sources */,
@@ -637,6 +650,7 @@
 				2163FF6D2B6C2D7A00878E7B /* CoordinatorView.swift in Sources */,
 				2163FFB12B6C57DC00878E7B /* SendDestinationScreen.swift in Sources */,
 				2163FFD02B6D5C9800878E7B /* HomeScreenModel.swift in Sources */,
+				2163FFEC2B6E84AF00878E7B /* MoneyInputSection.swift in Sources */,
 				2163FFB32B6C57E600878E7B /* RecipientScreen.swift in Sources */,
 				2163FFCB2B6D517900878E7B /* CountrySelector.swift in Sources */,
 				2163FFA22B6C4A8E00878E7B /* Country.swift in Sources */,
@@ -650,6 +664,7 @@
 				2163FF772B6C31F200878E7B /* Font.swift in Sources */,
 				2163FFE62B6DBB7E00878E7B /* NewRecipientPage.swift in Sources */,
 				2163FFB92B6C581000878E7B /* SuccessScreen.swift in Sources */,
+				2163FFEE2B6E920100878E7B /* InvoiceScreenModel.swift in Sources */,
 				2163FF792B6C323000878E7B /* View.swift in Sources */,
 				2163FFBF2B6D089C00878E7B /* HeaderView.swift in Sources */,
 				2163FFD22B6D5D7800878E7B /* NavigationBarView.swift in Sources */,
@@ -661,6 +676,7 @@
 				2163FFBB2B6C591400878E7B /* AppDelegate.swift in Sources */,
 				2163FF7B2B6C323D00878E7B /* Text.swift in Sources */,
 				2163FF002B6C236B00878E7B /* RimittanceApp.swift in Sources */,
+				2163FFEA2B6E845800878E7B /* InvoiceUiState.swift in Sources */,
 				2163FF712B6C2D8F00878E7B /* NavigationCoordinator.swift in Sources */,
 				2163FF6F2B6C2D8400878E7B /* CoordinatorViewStackTrigger.swift in Sources */,
 				2163FF9E2B6C485200878E7B /* WalletRepo.swift in Sources */,

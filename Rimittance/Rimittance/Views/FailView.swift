@@ -25,12 +25,12 @@ struct FailView: View {
                 .background(Circle().stroke(.white, lineWidth: 20).padding(10))
                 .padding(.bottom)
             
-            HStack {
-                Text("something_went_wrong".localized)
+            HStack(spacing: 0) {
+                Text("\("something_went_wrong".localized), ")
                     .font(.grey100, .regular, 14)
                 if let action = self.action {
                     Button(action: action) {
-                        Text("retry".localized)
+                        Text("retry".localized.lowercased())
                             .font(.grey100, .semiBold, 14)
                             .underline(true, color: .grey100)
                     }

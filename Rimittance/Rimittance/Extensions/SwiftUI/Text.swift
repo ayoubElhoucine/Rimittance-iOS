@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 @available(iOS 13.0, *)
-public extension Text {
+extension Text {
     func font(_ color: Color, _ rimittanceFont: Font.RimittanceFont, _ size: CGFloat) -> Text {
         switch rimittanceFont {
         case .regular:

@@ -8,7 +8,7 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-public extension Font {
+extension Font {
     enum RimittanceFont: String {
         case medium = "Outfit-Medium"
         case regular = "Outfit-Regular"

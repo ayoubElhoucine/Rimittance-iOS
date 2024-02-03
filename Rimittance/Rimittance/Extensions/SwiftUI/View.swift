@@ -24,8 +24,13 @@ extension View {
 }
 
 extension Spacer {
-    func asDivider() -> some View {
-        self.modifier(AsDividerModifier())
+    
+    func asDivider(color: Color = .grey05) -> some View {
+        self.modifier(AsDividerModifier(color: color))
+    }
+    
+    func asDashed(color: Color = .grey50) -> some View {
+        self.modifier(AsDashedModifier(color: color))
     }
 }
 

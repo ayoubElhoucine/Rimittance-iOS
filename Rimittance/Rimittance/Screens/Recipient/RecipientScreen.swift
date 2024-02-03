@@ -72,12 +72,16 @@ struct RecipientScreen: View {
         case .previous:
             EmptyView()
         case .new:
-            VStack {
-                Spacer()
-                FooterView {
-                    pushScreen(.walletOptions(model.createRecipient()))
-                }
-            }.clipped()
+            switch model.newUiState {
+            case .success(_):
+                VStack {
+                    Spacer()
+                    FooterView {
+                        pushScreen(.walletOptions(model.createRecipient()))
+                    }
+                }.clipped()
+            default: EmptyView()
+            }
         }
     }
 }
