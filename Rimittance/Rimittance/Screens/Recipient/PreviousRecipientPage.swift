@@ -16,10 +16,14 @@ extension RecipientScreen {
         
         var body: some View {
             switch model.previousUiState {
-            case .loading: Loading()
-            case .empty: Empty()
-            case .success(let data): Success(data, didSelect: didSelect)
-            case .failed(_): FailView(action: model.retryGetRecipients).padding(.top, 50)
+            case .loading: 
+                Loading()
+            case .empty:
+                Empty()
+            case .success(let data): 
+                Success(data, didSelect: didSelect)
+            case .failed(_): 
+                FailView(action: model.retryGetRecipients).padding(.top, 50)
             }
         }
         

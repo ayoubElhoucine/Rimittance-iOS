@@ -20,16 +20,18 @@ struct RecipientScreen: View {
                 VStack(spacing: 0) {
                     PagesTabSection()
                     SearchTextField(didChange: model.filter)
+                    
                     switch model.selectedPage {
-                    case .previous: PreviousRecipientPage(model: model) { recipient in
-                        pushScreen(.walletOptions(recipient))
-                    }
-                    case .new: NewRecipientPage(model: model) { recipient in
-                        pushScreen(.walletOptions(recipient))
-                    }
+                    case .previous: 
+                        PreviousRecipientPage(model: model) { recipient in
+                                pushScreen(.walletOptions(recipient))
+                        }
+                    case .new: 
+                        NewRecipientPage(model: model)
                     }
                 }.padding(insets)
-            }
+            }.padding(.bottom, insets.bottom)
+            FooterSection().padding(.bottom, insets.bottom)
         }
         .setupDefaultBackHandler()
         .background(Color.white.shadow(color: .grey25, radius: 300).ignoresSafeArea())
@@ -62,6 +64,21 @@ struct RecipientScreen: View {
             .background(isSelected ? Color.primary70 : .clear)
             .clipShape(RoundedRectangle(cornerRadius: 6))
             .padding(2)
+        }
+    }
+    
+    @ViewBuilder
+    private func FooterSection() -> some View {
+        switch model.selectedPage {
+        case .previous:
+            EmptyView()
+        case .new:
+            VStack {
+                Spacer()
+                FooterView {
+                    pushScreen(.walletOptions(model.createRecipient()))
+                }
+            }.clipped()
         }
     }
 }

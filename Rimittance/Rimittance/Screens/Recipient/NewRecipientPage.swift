@@ -12,13 +12,15 @@ extension RecipientScreen {
     struct NewRecipientPage: View {
         
         @StateObject var model: Model
-        let didCreate: (Recipient) -> Void
         
         var body: some View {
             switch model.newUiState {
-            case .loading: Loading()
-            case .success(let data): Success(data, didSelect: model.setSelectedCountry, didCreate: didCreate)
-            default: FailView(action: model.retryGetRecipients).padding(.top, 50)
+            case .loading: 
+                Loading()
+            case .success(let data): 
+                Success(data, didSelect: model.setSelectedCountry)
+            default: 
+                FailView(action: model.retryGetRecipients).padding(.top, 50)
             }
         }
         
@@ -28,13 +30,36 @@ extension RecipientScreen {
         }
         
         @ViewBuilder
-        private func Success(_ data: [Country], didSelect: @escaping (Country) -> Void, didCreate: @escaping (Recipient) -> Void) -> some View {
+        private func Success(_ data: [Country], didSelect: @escaping (Country) -> Void) -> some View {
             VStack(alignment: .leading, spacing: 10) {
                 Text("country".localized).font(.grey100, .regular, 16)
                 if let selectedCountry = model.selectedCountry {
                     CountrySelector(selectedCountry: selectedCountry, countries: data, didSelect: didSelect)
+                    RoundedRectangle(cornerRadius: 8)
+                        .fill(Color.primary05)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 48)
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 8).strokeBorder(Color.primary15, lineWidth: 1)
+                                .overlay {
+                                    HStack {
+                                        Image("ic_list")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 16)
+                                        Text("choose_contact".localized).font(.primary100, .semiBold, 16)
+                                    }
+                                }
+                        }
+                        .padding(.vertical, 16)
+                    HStack(spacing: 6) {
+                        Spacer().asDivider()
+                        Text("add_manually".localized.uppercased()).font(.grey50, .semiBold, 12)
+                        Spacer().asDivider()
+                    }
                 }
             }
+            .frame(maxHeight: .infinity)
             .padding(.vertical, 26)
             .padding(.horizontal, 16)
         }

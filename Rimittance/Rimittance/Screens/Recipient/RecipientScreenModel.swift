@@ -78,6 +78,10 @@ extension RecipientScreen {
         func setSelectedCountry(_ value: Country) {
             selectedCountry = value
         }
+        
+        func createRecipient() -> Recipient {
+            return Recipient(id: "12", name: "New recipient name", country: selectedCountry?.name, mobileWallet: nil)
+        }
     }
 }
 
