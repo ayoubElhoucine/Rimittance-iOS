@@ -71,6 +71,7 @@
 		2163FFEE2B6E920100878E7B /* InvoiceScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFED2B6E920100878E7B /* InvoiceScreenModel.swift */; };
 		2163FFF02B6EAF0600878E7B /* Dashed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFEF2B6EAF0600878E7B /* Dashed.swift */; };
 		2163FFF22B6EBF8700878E7B /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFF12B6EBF8700878E7B /* UIApplication.swift */; };
+		2163FFF42B6EC0D200878E7B /* ConfimrationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFF32B6EC0D200878E7B /* ConfimrationSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +158,7 @@
 		2163FFED2B6E920100878E7B /* InvoiceScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceScreenModel.swift; sourceTree = "<group>"; };
 		2163FFEF2B6EAF0600878E7B /* Dashed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashed.swift; sourceTree = "<group>"; };
 		2163FFF12B6EBF8700878E7B /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		2163FFF32B6EC0D200878E7B /* ConfimrationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfimrationSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -469,6 +471,7 @@
 				2163FFE92B6E845800878E7B /* InvoiceUiState.swift */,
 				2163FFEB2B6E84AF00878E7B /* MoneyInputSection.swift */,
 				2163FFB82B6C581000878E7B /* SuccessScreen.swift */,
+				2163FFF32B6EC0D200878E7B /* ConfimrationSheet.swift */,
 			);
 			path = Invoice;
 			sourceTree = "<group>";
@@ -670,6 +673,7 @@
 				2163FFB92B6C581000878E7B /* SuccessScreen.swift in Sources */,
 				2163FFEE2B6E920100878E7B /* InvoiceScreenModel.swift in Sources */,
 				2163FF792B6C323000878E7B /* View.swift in Sources */,
+				2163FFF42B6EC0D200878E7B /* ConfimrationSheet.swift in Sources */,
 				2163FFBF2B6D089C00878E7B /* HeaderView.swift in Sources */,
 				2163FFD22B6D5D7800878E7B /* NavigationBarView.swift in Sources */,
 				2163FFDB2B6D960400878E7B /* Divider.swift in Sources */,

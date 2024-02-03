@@ -13,5 +13,12 @@ extension InvoiceScreen {
         case idle
         case success(Double, Double)
         case failed
+        
+        var data: (total: Double, receive: Double) {
+            switch self {
+            case .success(let total, let receive): return (total, receive)
+            default: return (0.0, 0.0)
+            }
+        }
     }
 }
