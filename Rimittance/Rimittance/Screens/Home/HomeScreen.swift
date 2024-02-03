@@ -11,7 +11,7 @@ struct HomeScreen: View {
     @StateObject private var model = Model()
     
     var body: some View {
-        ScreenLayout(headerHeight: 0, color: .primary05) {
+        ScreenLayout(headerHeight: 0, color: .primary01) {
             EmptyView()
         } contentFactory: { insets in
             ScrollView(showsIndicators: false) {

@@ -16,7 +16,7 @@ struct HeaderView: View {
     private let didClose: (() -> Void)?
     private let didBack: (() -> Void)?
     
-    init(headerHeight: CGFloat = 110, bgColor: Color = Color.white, title: String, didBack: (() -> Void)? = nil, didClose: (() -> Void)? = nil) {
+    init(headerHeight: CGFloat = 100, bgColor: Color = Color.white, title: String, didBack: (() -> Void)? = nil, didClose: (() -> Void)? = nil) {
         self.headerHeight = headerHeight
         self.title = title
         self.didBack = didBack
@@ -24,7 +24,7 @@ struct HeaderView: View {
     }
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: 12) {
             HStack {
                 if let didBack = didBack {
                     ItemView(icon: "ic_back", didClick: didBack)

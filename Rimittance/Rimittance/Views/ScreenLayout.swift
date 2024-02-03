@@ -17,7 +17,7 @@ public struct ScreenLayout<Header: View, Content: View>: View {
     public init(headerHeight: CGFloat? = nil, color: Color = .white, @ViewBuilder headerFactory: () -> Header, @ViewBuilder contentFactory: @escaping (EdgeInsets) -> Content) {
         self.header = headerFactory()
         self.contentFactory = contentFactory
-        self.headerHeight = headerHeight ?? 110
+        self.headerHeight = headerHeight ?? 100
         self.color = color
     }
     

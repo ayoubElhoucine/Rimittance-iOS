@@ -19,7 +19,7 @@ struct RecipientScreen: View {
             ScrollView(showsIndicators: false) {
                 VStack(spacing: 0) {
                     PagesTabSection()
-                    SearchTextField(didChange: model.filter).padding(.horizontal, 16)
+                    SearchTextField(didChange: model.filter)
                     switch model.selectedPage {
                     case .previous: PreviousRecipientPage(model: model) { recipient in
                         pushScreen(.walletOptions(recipient))
@@ -30,7 +30,9 @@ struct RecipientScreen: View {
                     }
                 }.padding(insets)
             }
-        }.setupDefaultBackHandler()
+        }
+        .setupDefaultBackHandler()
+        .background(Color.white.shadow(color: .grey25, radius: 300).ignoresSafeArea())
     }
     
     @ViewBuilder

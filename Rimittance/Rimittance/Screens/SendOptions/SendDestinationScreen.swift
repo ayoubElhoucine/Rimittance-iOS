@@ -27,18 +27,20 @@ struct SendDestinationScreen: View {
         ScreenLayout {
             HeaderView(title: "send_to_africa".localized, didBack: popBack)
         } contentFactory: { insets in
-            LazyVStack(spacing: 0) {
+            VStack {
                 Spacer().asDivider()
                 ForEach(options, id: \.self) { item in
                     OptionItem(title: item.title, icon: "ic_arrow_send") {
-                        pushScreen(.recipient)
+                        pushScreen(.recipient, withAnimation: .fromTrailing)
                     }
                     Spacer().asDivider()
                 }
             }
             .padding(insets)
             .padding(.top, 16)
-        }.setupDefaultBackHandler()
+        }
+        .setupDefaultBackHandler()
+        .background(Color.white.shadow(color: .grey25, radius: 300).ignoresSafeArea())
     }
 }
 

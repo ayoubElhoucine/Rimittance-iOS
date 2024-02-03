@@ -21,7 +21,7 @@ extension HomeScreen {
                     }
                 }
                 .frame(maxWidth: .infinity)
-                .background(RoundedRectangle(cornerRadius: 16).fill(.white).shadow(color: .grey05, radius: 10))
+                .background(RoundedRectangle(cornerRadius: 16).fill(.white).shadow(color: .grey05, radius: 6))
             }.padding(16)
         }
         

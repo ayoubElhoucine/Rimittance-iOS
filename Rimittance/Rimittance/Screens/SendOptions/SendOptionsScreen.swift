@@ -33,7 +33,7 @@ struct SendOptionsScreen: View {
                 ForEach(options, id: \.self) { item in
                     OptionItem(title: item.rawValue.title, icon: item.rawValue.icon) {
                         if item == .sendToAfrica {
-                            pushScreen(.sendDestination)
+                            pushScreen(.sendDestination, withAnimation: .fromTrailing)
                         }
                     }
                     Spacer().asDivider()

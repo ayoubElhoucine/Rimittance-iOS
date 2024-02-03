@@ -31,5 +31,6 @@ struct SearchTextField: View {
         .frame(height: 40)
         .background(Color.grey05)
         .clipShape(RoundedRectangle(cornerRadius: 12))
+        .padding(.horizontal, 16)
     }
 }
