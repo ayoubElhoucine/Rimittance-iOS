@@ -30,7 +30,7 @@ struct RecipientScreen: View {
                         NewRecipientPage(model: model)
                     }
                 }.padding(insets)
-            }.padding(.bottom, insets.bottom)
+            }.padding(.bottom, insets.bottom + 40)
             FooterSection().padding(.bottom, insets.bottom)
         }
         .setupDefaultBackHandler()
@@ -40,8 +40,7 @@ struct RecipientScreen: View {
     @ViewBuilder
     private func PagesTabSection() -> some View {
         HStack(spacing: 0) {
-            ForEach(0 ..< pages.count, id: \.self) { index in
-                let item = pages[index]
+            ForEach(pages, id: \.self) { item in
                 PageItem(title: item.title, isSelected: model.selectedPage == item) {
                     model.setPage(item)
                 }

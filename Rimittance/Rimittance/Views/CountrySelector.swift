@@ -15,8 +15,7 @@ struct CountrySelector: View {
     
     var body: some View {
         Menu {
-            ForEach(0 ..< countries.count, id: \.self) { index in
-                let country = countries[index]
+            ForEach(countries, id: \.self) { country in
                 Button {
                     didSelect(country)
                 } label: {

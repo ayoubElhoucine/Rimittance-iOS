@@ -74,7 +74,7 @@ extension RecipientScreen {
             }
             .frame(maxHeight: .infinity)
             .padding(.top, 26)
-            .padding(.bottom, 80)
+            .padding(.bottom, 40)
             .padding(.horizontal, 16)
         }
     }

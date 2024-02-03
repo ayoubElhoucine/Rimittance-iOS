@@ -31,8 +31,7 @@ extension HomeScreen {
             VStack(spacing: 0) {
                 Spacer().frame(maxWidth: .infinity).frame(height: 1).background(Color.grey05)
                 HStack(spacing: 0) {
-                    ForEach(0 ..< tabs.count, id: \.self) { index in
-                        let item = tabs[index]
+                    ForEach(tabs, id: \.self) { item in
                         if item == .send {
                             SendItem(didClick: didSelect)
                         } else {
