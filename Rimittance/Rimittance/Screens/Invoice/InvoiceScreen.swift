@@ -12,9 +12,6 @@ struct InvoiceScreen: View {
     @StateObject private var model = Model()
     let recipient: Recipient
     
-    @State private var totalToSpend: Double = 0.0
-    @State private var recipientReceive: Double = 0.0
-    
     var body: some View {
         ScreenLayout {
             HeaderView(title: "send_money".localized, didBack: popBack)
@@ -26,17 +23,9 @@ struct InvoiceScreen: View {
                     FeesSection()
                 }.padding(16)
             }.padding(insets)
+            FooterSection().padding(insets)
         }
-        .onReceive(model.$uiState) { value in
-            switch value {
-            case .success(let total, let receive):
-                totalToSpend = total
-                recipientReceive = receive
-            default:
-                totalToSpend = 0.0
-                recipientReceive = 0.0
-            }
-        }
+        .onTapGesture(perform: UIApplication.shared.endEditing)
     }
     
     @ViewBuilder
@@ -50,17 +39,21 @@ struct InvoiceScreen: View {
     
     @ViewBuilder
     private func FeesSection() -> some View {
+        let result: (total: Double, receive: Double) = switch model.uiState {
+        case .success(let total, let receive): (total, receive)
+        default: (0.0, 0.0)
+        }
         VStack(alignment: .leading, spacing: 14) {
             Text("fees_break".localized).font(.grey100, .medium, 16)
             FeeItem(title: "moneco_fees", value: model.getMonecoFees())
             FeeItem(title: "transfer_fees", value: 0.0)
             FeeItem(title: "conversion_rate", value: model.getConversionRate(), currency: "XOF")
-            FeeItem(title: "you_spend_total", value: totalToSpend)
+            FeeItem(title: "you_spend_total", value: result.total)
             Spacer().asDashed().padding(.vertical, 10)
             HStack {
                 Text("recipient_gets".localized).font(.grey50, .regular, 14)
                 Spacer()
-                Text("\(recipientReceive.nicer()) XOF").font(.grey100, .semiBold, 18)
+                Text("\(result.receive.nicer()) XOF").font(.grey100, .semiBold, 18)
             }
         }
     }
@@ -72,5 +65,19 @@ struct InvoiceScreen: View {
             Spacer()
             Text("\(value.nicer()) \(currency)").font(.grey100, .regular, 14)
         }
+    }
+    
+    @ViewBuilder
+    private func FooterSection() -> some View {
+        let disabled = switch model.uiState {
+        case .success(_, _): true
+        default: false
+        }
+        VStack {
+            Spacer()
+            FooterView(disabled: disabled) {
+                
+            }
+        }.clipped()
     }
 }

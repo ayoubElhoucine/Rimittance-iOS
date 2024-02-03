@@ -70,6 +70,7 @@
 		2163FFEC2B6E84AF00878E7B /* MoneyInputSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFEB2B6E84AF00878E7B /* MoneyInputSection.swift */; };
 		2163FFEE2B6E920100878E7B /* InvoiceScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFED2B6E920100878E7B /* InvoiceScreenModel.swift */; };
 		2163FFF02B6EAF0600878E7B /* Dashed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFEF2B6EAF0600878E7B /* Dashed.swift */; };
+		2163FFF22B6EBF8700878E7B /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FFF12B6EBF8700878E7B /* UIApplication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +156,7 @@
 		2163FFEB2B6E84AF00878E7B /* MoneyInputSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyInputSection.swift; sourceTree = "<group>"; };
 		2163FFED2B6E920100878E7B /* InvoiceScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceScreenModel.swift; sourceTree = "<group>"; };
 		2163FFEF2B6EAF0600878E7B /* Dashed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashed.swift; sourceTree = "<group>"; };
+		2163FFF12B6EBF8700878E7B /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,6 +322,7 @@
 			children = (
 				2163FF952B6C46DE00878E7B /* String.swift */,
 				2163FF972B6C47F100878E7B /* Double.swift */,
+				2163FFF12B6EBF8700878E7B /* UIApplication.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -630,6 +633,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2163FFF22B6EBF8700878E7B /* UIApplication.swift in Sources */,
 				2163FFC52B6D482400878E7B /* FailView.swift in Sources */,
 				2163FFF02B6EAF0600878E7B /* Dashed.swift in Sources */,
 				2163FFA42B6C4AC400878E7B /* Wallet.swift in Sources */,

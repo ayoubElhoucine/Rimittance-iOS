@@ -22,6 +22,7 @@ struct SearchTextField: View {
                 .scaledToFit()
                 .frame(width: 14, height: 14)
             TextField("search".localized, text: $value)
+                .accentColor(.grey50)
                 .font(.custom(Font.RimittanceFont.regular.rawValue, size: 14))
                 .autocorrectionDisabled(true)
                 .onChange(of: value, perform: didChange)

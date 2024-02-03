@@ -29,14 +29,13 @@ struct RecipientScreen: View {
                     case .new: 
                         NewRecipientPage(model: model)
                     }
-                }
-                .padding(.top, insets.top)
-                .padding(.bottom, 30)
+                }.padding(insets)
             }.padding(.bottom, insets.bottom + 40)
             FooterSection().padding(.bottom, insets.bottom)
         }
         .setupDefaultBackHandler()
         .background(Color.white.shadow(color: .grey25, radius: 300).ignoresSafeArea())
+        .onTapGesture(perform: UIApplication.shared.endEditing)
     }
     
     @ViewBuilder
