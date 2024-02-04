@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Wallet: Decodable, Hashable {
+struct Wallet: Codable, Hashable {
     let id: String
     let name: String
 }

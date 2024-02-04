@@ -6,10 +6,13 @@
 //
 
 import Foundation
+import Combine
 
 
 extension WalletOptionsScreen {
     class Model: ObservableObject {
+        
+        private var cancellables: Set<AnyCancellable> = []
         
         @Published private(set) var uiState: UiState<[Wallet]> = .loading
         @Published private(set) var selectedWallet: Wallet? = nil
@@ -18,12 +21,21 @@ extension WalletOptionsScreen {
             getWallets()
         }
         
+        deinit {
+            cancellables.removeAll()
+            WalletRepo.destroy()
+        }
+        
         private func getWallets() {
-            WalletRepo.shared.getWallets { [weak self] data in
-                self?.uiState = .success(data)
-            } failed: { [weak self] error in
-                self?.uiState = .failed(error?.message)
-            }
+            WalletRepo.shared.fetchWallets()?
+                .sink { [weak self] (dataResponse) in
+                    switch dataResponse.result {
+                    case .success(let data):
+                        self?.uiState = .success(data)
+                    case .failure(let error):
+                        self?.uiState = .failed(error.message)
+                    }
+                }.store(in: &cancellables)
         }
         
         func retryGetWallet() {

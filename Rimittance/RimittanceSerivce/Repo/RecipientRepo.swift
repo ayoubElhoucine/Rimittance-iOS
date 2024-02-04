@@ -6,17 +6,41 @@
 //
 
 import Foundation
+import Combine
+import Alamofire
 
 
-class RecipientRepo: NetworkService {
-    
-    static let shared = RecipientRepo()
-    
-    private enum Urls: String {
+protocol RecipientRepoProtocol {
+    func fetchRecipients() -> AnyPublisher<DataResponse<[Recipient], Network.ErrorResponse>, Never>?
+}
+
+class RecipientRepo: Network, RecipientRepoProtocol {
+        
+    func fetchRecipients() -> AnyPublisher<Alamofire.DataResponse<[Recipient], Network.ErrorResponse>, Never>? {
+        return get(url: Urls.recipients.rawValue)
+    }
+
+}
+
+extension RecipientRepo {
+    fileprivate enum Urls: String {
         case recipients = "recipients"
     }
+}
+
+extension RecipientRepo {
+    private static var sharedInstance: RecipientRepo?
     
-    func getRecipients(success: @escaping ([Recipient]) -> Void, failed: @escaping (ErrorResponse?) -> Void) {
-        get(url: Urls.recipients.rawValue, success: success, failed: failed)
+    class var shared: RecipientRepo {
+        guard let sharedInstance else {
+            let instance = RecipientRepo()
+            sharedInstance = instance
+            return sharedInstance ?? .init()
+        }
+        return sharedInstance
+    }
+    
+    class func destroy() {
+        sharedInstance = nil
     }
 }

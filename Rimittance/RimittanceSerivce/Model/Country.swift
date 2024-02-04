@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Country: Decodable, Hashable {
+struct Country: Codable, Hashable {
     let id: String
     let name: String
     let currencyCode: String?

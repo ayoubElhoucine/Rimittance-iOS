@@ -6,17 +6,41 @@
 //
 
 import Foundation
+import Combine
+import Alamofire
 
 
-class CountryRepo: NetworkService {
+protocol CountryRepoProtocol {
+    func fetchCountries() -> AnyPublisher<DataResponse<[Country], Network.ErrorResponse>, Never>?
+}
+
+class CountryRepo: Network, CountryRepoProtocol {
     
-    static let shared = CountryRepo()
-    
-    private enum Urls: String {
-        case countries = "countries"
+    func fetchCountries() -> AnyPublisher<Alamofire.DataResponse<[Country], Network.ErrorResponse>, Never>? {
+        get(url: Urls.countries.rawValue)
     }
     
-    func getCountries(success: @escaping ([Country]) -> Void, failed: @escaping (ErrorResponse?) -> Void) {
-        get(url: Urls.countries.rawValue, success: success, failed: failed)
+}
+
+extension CountryRepo {
+    fileprivate enum Urls: String {
+        case countries = "countries"
+    }
+}
+
+extension CountryRepo {
+    private static var sharedInstance: CountryRepo?
+    
+    class var shared: CountryRepo {
+        guard let sharedInstance else {
+            let instance = CountryRepo()
+            sharedInstance = instance
+            return sharedInstance ?? .init()
+        }
+        return sharedInstance
+    }
+    
+    class func destroy() {
+        sharedInstance = nil
     }
 }

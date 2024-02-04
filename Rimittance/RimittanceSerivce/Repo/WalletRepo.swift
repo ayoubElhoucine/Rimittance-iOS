@@ -6,17 +6,41 @@
 //
 
 import Foundation
+import Combine
+import Alamofire
 
 
-class WalletRepo: NetworkService {
+protocol WalletRepoProtocol {
+    func fetchWallets() -> AnyPublisher<DataResponse<[Wallet], Network.ErrorResponse>, Never>?
+}
+
+class WalletRepo: Network, WalletRepoProtocol{
     
-    static let shared = WalletRepo()
-    
-    private enum Urls: String {
-        case wallets = "wallets"
+    func fetchWallets() -> AnyPublisher<Alamofire.DataResponse<[Wallet], Network.ErrorResponse>, Never>? {
+        return get(url: Urls.wallets.rawValue)
     }
     
-    func getWallets(success: @escaping ([Wallet]) -> Void, failed: @escaping (ErrorResponse?) -> Void) {
-        get(url: Urls.wallets.rawValue, success: success, failed: failed)
+}
+
+extension WalletRepo {
+    fileprivate enum Urls: String {
+        case wallets = "wallets"
+    }
+}
+
+extension WalletRepo {
+    private static var sharedInstance: WalletRepo?
+    
+    class var shared: WalletRepo {
+        guard let sharedInstance else {
+            let instance = WalletRepo()
+            sharedInstance = instance
+            return sharedInstance ?? .init()
+        }
+        return sharedInstance
+    }
+    
+    class func destroy() {
+        sharedInstance = nil
     }
 }

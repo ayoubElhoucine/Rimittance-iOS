@@ -6,10 +6,13 @@
 //
 
 import Foundation
+import Combine
 
 
 extension RecipientScreen {
     class Model: ObservableObject {
+        
+        private var cancellables: Set<AnyCancellable> = []
         
         @Published private(set) var previousUiState: UiState<[Recipient]> = .loading
         @Published private(set) var newUiState: UiState<[Country]> = .loading
@@ -24,26 +27,41 @@ extension RecipientScreen {
             getCountries()
         }
         
+        deinit {
+            print("deinit: recipient !!!")
+            cancellables.removeAll()
+            RecipientRepo.destroy()
+            CountryRepo.destroy()
+        }
+        
         private func getRecipients() {
-            RecipientRepo.shared.getRecipients { [weak self] data in
-                self?.recipientList = data
-                if data.isEmpty {
-                    self?.previousUiState = .empty
-                } else {
-                    self?.previousUiState = .success(data)
-                }
-            } failed: { [weak self] error in
-                self?.previousUiState = .failed(error?.message)
-            }
+            RecipientRepo.shared.fetchRecipients()?
+                .sink { [weak self] (dataResponse) in
+                    switch dataResponse.result {
+                    case .success(let data):
+                        self?.recipientList = data
+                        if data.isEmpty {
+                            self?.previousUiState = .empty
+                        } else {
+                            self?.previousUiState = .success(data)
+                        }
+                    case .failure(let error):
+                        self?.previousUiState = .failed(error.message)
+                    }
+                }.store(in: &cancellables)
         }
         
         private func getCountries() {
-            CountryRepo.shared.getCountries { [weak self] data in
-                self?.selectedCountry = data.first
-                self?.newUiState = .success(data)
-            } failed: { [weak self] error in
-                self?.newUiState = .failed(error?.message)
-            }
+            CountryRepo.shared.fetchCountries()?
+                .sink { [weak self] (dataResponse) in
+                    switch dataResponse.result {
+                    case .success(let data):
+                        self?.selectedCountry = data.first
+                        self?.newUiState = .success(data)
+                    case .failure(let error):
+                        self?.newUiState = .failed(error.message)
+                    }
+                }.store(in: &cancellables)
         }
         
         func retryGetRecipients() {

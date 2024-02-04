@@ -28,7 +28,7 @@
 		2163FF882B6C3B3C00878E7B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2163FF8A2B6C3B3C00878E7B /* Localizable.strings */; };
 		2163FF8D2B6C452800878E7B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2163FF8C2B6C452800878E7B /* Alamofire */; };
 		2163FF902B6C455900878E7B /* BottomSheetUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2163FF8F2B6C455900878E7B /* BottomSheetUI */; };
-		2163FF922B6C45B100878E7B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FF912B6C45B100878E7B /* NetworkService.swift */; };
+		2163FF922B6C45B100878E7B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FF912B6C45B100878E7B /* Network.swift */; };
 		2163FF942B6C466C00878E7B /* EscapingSlashes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FF932B6C466C00878E7B /* EscapingSlashes.swift */; };
 		2163FF962B6C46DE00878E7B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FF952B6C46DE00878E7B /* String.swift */; };
 		2163FF982B6C47F100878E7B /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163FF972B6C47F100878E7B /* Double.swift */; };
@@ -115,7 +115,7 @@
 		2163FF7F2B6C38E700878E7B /* Outfit-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-Medium.ttf"; sourceTree = "<group>"; };
 		2163FF842B6C392000878E7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2163FF892B6C3B3C00878E7B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2163FF912B6C45B100878E7B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		2163FF912B6C45B100878E7B /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		2163FF932B6C466C00878E7B /* EscapingSlashes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscapingSlashes.swift; sourceTree = "<group>"; };
 		2163FF952B6C46DE00878E7B /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		2163FF972B6C47F100878E7B /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
@@ -272,7 +272,7 @@
 		2163FF2B2B6C255B00878E7B /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				2163FF912B6C45B100878E7B /* NetworkService.swift */,
+				2163FF912B6C45B100878E7B /* Network.swift */,
 				2163FF932B6C466C00878E7B /* EscapingSlashes.swift */,
 			);
 			path = Network;
@@ -640,7 +640,7 @@
 				2163FFC52B6D482400878E7B /* FailView.swift in Sources */,
 				2163FFF02B6EAF0600878E7B /* Dashed.swift in Sources */,
 				2163FFA42B6C4AC400878E7B /* Wallet.swift in Sources */,
-				2163FF922B6C45B100878E7B /* NetworkService.swift in Sources */,
+				2163FF922B6C45B100878E7B /* Network.swift in Sources */,
 				2163FFE82B6E734B00878E7B /* WalletOptionsScreenModel.swift in Sources */,
 				2163FFAD2B6C57BA00878E7B /* HomeScreen.swift in Sources */,
 				2163FF962B6C46DE00878E7B /* String.swift in Sources */,
