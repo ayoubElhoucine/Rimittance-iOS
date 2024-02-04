@@ -13,12 +13,7 @@ import Alamofire
 
 class Network {
     
-    private let session = Session()
-    
     private let timout: Double = 15
-    
-    private let base: String = "https://my-json-server.typicode.com/MonecoHQ/fake-api/"
-    
     
     func get<Model: Codable>(url: String, query: [String: Any]? = nil) -> AnyPublisher<DataResponse<Model, ErrorResponse>, Never> {
         debugPrint("http:url: \(base)\(url)")
@@ -112,6 +107,20 @@ extension Network {
     struct ErrorResponse: Decodable, Error {
         let code: Int
         let message: String
+    }
+    
+}
+
+extension Network {
+    
+    fileprivate var scema: String {
+        get { return "https" }
+    }
+    fileprivate var host: String {
+        get { return "my-json-server.typicode.com/MonecoHQ" }
+    }
+    fileprivate var base: String {
+        get { return "\(scema)\(host)/fake-api/" }
     }
     
 }
