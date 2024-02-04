@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RecipientScreen: View {
-    @StateObject private var model = Model()
+    @StateObject private var viewModel = ViewModel()
     
     private let pages = [RecipientPages.previous, RecipientPages.new]
     
@@ -19,15 +19,15 @@ struct RecipientScreen: View {
             ScrollView(showsIndicators: false) {
                 VStack(spacing: 0) {
                     PagesTabSection()
-                    SearchTextField(didChange: model.filter)
+                    SearchTextField(didChange: viewModel.filter)
                     
-                    switch model.selectedPage {
+                    switch viewModel.selectedPage {
                     case .previous: 
-                        PreviousRecipientPage(model: model) { recipient in
+                        PreviousRecipientPage(viewModel: viewModel) { recipient in
                                 pushScreen(.walletOptions(recipient))
                         }
                     case .new: 
-                        NewRecipientPage(model: model)
+                        NewRecipientPage(viewModel: viewModel)
                     }
                 }.padding(insets)
             }.padding(.bottom, insets.bottom + 40)
@@ -42,8 +42,8 @@ struct RecipientScreen: View {
     private func PagesTabSection() -> some View {
         HStack(spacing: 0) {
             ForEach(pages, id: \.self) { item in
-                PageItem(title: item.title, isSelected: model.selectedPage == item) {
-                    model.setPage(item)
+                PageItem(title: item.title, isSelected: viewModel.selectedPage == item) {
+                    viewModel.setPage(item)
                 }
             }
         }
@@ -69,16 +69,16 @@ struct RecipientScreen: View {
     
     @ViewBuilder
     private func FooterSection() -> some View {
-        switch model.selectedPage {
+        switch viewModel.selectedPage {
         case .previous:
             EmptyView()
         case .new:
-            switch model.newUiState {
+            switch viewModel.newUiState {
             case .success(_):
                 VStack {
                     Spacer()
                     FooterView {
-                        pushScreen(.walletOptions(model.createRecipient()))
+                        pushScreen(.walletOptions(viewModel.createRecipient()))
                     }
                 }.clipped()
             default: EmptyView()

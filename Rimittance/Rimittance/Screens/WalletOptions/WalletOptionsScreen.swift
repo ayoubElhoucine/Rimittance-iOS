@@ -9,7 +9,7 @@ import SwiftUI
 
 struct WalletOptionsScreen: View {
     
-    @StateObject private var model = Model()
+    @StateObject private var viewModel = ViewModel()
     
     let recipient: Recipient
     
@@ -17,13 +17,13 @@ struct WalletOptionsScreen: View {
         ScreenLayout {
             HeaderView(title: "choose_wallet".localized, didBack: popBack)
         } contentFactory: { insets in
-            switch model.uiState {
+            switch viewModel.uiState {
             case .loading:
                 Loading()
             case .success(let data):
                 Success(data).padding(insets)
             default:
-                Fail(action: model.retryGetWallet)
+                Fail(action: viewModel.retryGetWallet)
             }
         }
         .setupDefaultBackHandler(home: true)
@@ -47,7 +47,7 @@ struct WalletOptionsScreen: View {
     private func Success(_ data: [Wallet]) -> some View {
         LazyVStack(spacing: 16) {
             ForEach(data, id: \.self) { item in
-                WalletItem(item, isSelected: item == model.selectedWallet)
+                WalletItem(item, isSelected: item == viewModel.selectedWallet)
             }
         }
         .padding(.horizontal, 16)
@@ -55,8 +55,8 @@ struct WalletOptionsScreen: View {
         
         VStack {
             Spacer()
-            FooterView(disabled: model.selectedWallet == nil) {
-                pushScreen(.invoice(model.getUpdateRecipient(recipient)))
+            FooterView(disabled: viewModel.selectedWallet == nil) {
+                pushScreen(.invoice(viewModel.getUpdateRecipient(recipient)))
             }
         }.clipped()
     }
@@ -64,7 +64,7 @@ struct WalletOptionsScreen: View {
     @ViewBuilder
     private func WalletItem(_ wallet: Wallet, isSelected: Bool) -> some View {
         Button {
-            model.setSelectedWallet(wallet)
+            viewModel.setSelectedWallet(wallet)
         } label: {
             HStack(spacing: 16) {
                 Image(image(wallet))

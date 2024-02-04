@@ -10,7 +10,7 @@ import Combine
 
 
 extension RecipientScreen {
-    class Model: ObservableObject {
+    class ViewModel: ObservableObject {
         
         private var cancellables: Set<AnyCancellable> = []
         
@@ -28,7 +28,6 @@ extension RecipientScreen {
         }
         
         deinit {
-            print("deinit: recipient !!!")
             cancellables.removeAll()
             RecipientRepo.destroy()
             CountryRepo.destroy()

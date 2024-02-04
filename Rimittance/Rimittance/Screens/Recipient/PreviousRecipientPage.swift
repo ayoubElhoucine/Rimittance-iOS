@@ -11,11 +11,11 @@ import SwiftUI
 extension RecipientScreen {
     struct PreviousRecipientPage: View {
         
-        @StateObject var model: Model
+        @StateObject var viewModel: ViewModel
         let didSelect: (Recipient) -> Void
         
         var body: some View {
-            switch model.previousUiState {
+            switch viewModel.previousUiState {
             case .loading: 
                 Loading()
             case .empty:
@@ -23,7 +23,7 @@ extension RecipientScreen {
             case .success(let data): 
                 Success(data, didSelect: didSelect)
             case .failed(_): 
-                FailView(action: model.retryGetRecipients).padding(.top, 50)
+                FailView(action: viewModel.retryGetRecipients).padding(.top, 50)
             }
         }
         

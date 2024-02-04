@@ -11,7 +11,7 @@ import BottomSheetUI
 
 struct InvoiceScreen: View {
     
-    @StateObject private var model = Model()
+    @StateObject private var viewModel = ViewModel()
     let recipient: Recipient
     
     @State private var showConfirmationSheet = false
@@ -22,7 +22,7 @@ struct InvoiceScreen: View {
         } contentFactory: { insets in
             ScrollView(showsIndicators: false) {
                 VStack(alignment: .leading, spacing: 24) {
-                    MoneyInputSection(model: model)
+                    MoneyInputSection(viewModel: viewModel)
                     FreeRimittanceSection()
                     FeesSection()
                 }.padding(16)
@@ -32,7 +32,7 @@ struct InvoiceScreen: View {
         .setupDefaultBackHandler()
         .onTapGesture(perform: UIApplication.shared.endEditing)
         .asBottomSheetUI(show: $showConfirmationSheet) {
-            ConfimrationSheet(recipient: recipient, sendingValue: model.uiState.data.receive) {
+            ConfimrationSheet(recipient: recipient, sendingValue: viewModel.uiState.data.receive) {
                 withAnimation { showConfirmationSheet = false }
                 pushScreen(.success)
             }
@@ -52,15 +52,15 @@ struct InvoiceScreen: View {
     private func FeesSection() -> some View {
         VStack(alignment: .leading, spacing: 14) {
             Text("fees_break".localized).font(.grey100, .medium, 16)
-            FeeItem(title: "moneco_fees", value: model.getMonecoFees())
+            FeeItem(title: "moneco_fees", value: viewModel.getMonecoFees())
             FeeItem(title: "transfer_fees", value: 0.0)
-            FeeItem(title: "conversion_rate", value: model.getConversionRate(), currency: "XOF")
-            FeeItem(title: "you_spend_total", value: model.uiState.data.total)
+            FeeItem(title: "conversion_rate", value: viewModel.getConversionRate(), currency: "XOF")
+            FeeItem(title: "you_spend_total", value: viewModel.uiState.data.total)
             Spacer().asDashed().padding(.vertical, 10)
             HStack {
                 Text("recipient_gets".localized).font(.grey50, .regular, 14)
                 Spacer()
-                Text("\(model.uiState.data.receive.nicer()) XOF").font(.grey100, .semiBold, 18)
+                Text("\(viewModel.uiState.data.receive.nicer()) XOF").font(.grey100, .semiBold, 18)
             }
         }
     }
@@ -76,7 +76,7 @@ struct InvoiceScreen: View {
     
     @ViewBuilder
     private func FooterSection() -> some View {
-        let disabled = switch model.uiState {
+        let disabled = switch viewModel.uiState {
         case .success(_, _): false
         default: true
         }

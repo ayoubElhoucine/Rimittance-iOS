@@ -9,7 +9,7 @@ import Foundation
 
 
 extension InvoiceScreen {
-    class Model: ObservableObject {
+    class ViewModel: ObservableObject {
         
         @Published private(set) var uiState: UiState = .idle
         

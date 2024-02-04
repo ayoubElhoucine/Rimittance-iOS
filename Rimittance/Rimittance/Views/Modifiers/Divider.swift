@@ -18,6 +18,6 @@ struct AsDividerModifier: ViewModifier {
         content
             .frame(maxWidth: .infinity)
             .frame(height: 1)
-            .background(Color.grey05)
+            .background(color)
     }
 }

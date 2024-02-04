@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeScreen: View {
-    @StateObject private var model = Model()
+    @StateObject private var model = ViewModel()
     
     var body: some View {
         ScreenLayout(headerHeight: 0, color: .primary01) {

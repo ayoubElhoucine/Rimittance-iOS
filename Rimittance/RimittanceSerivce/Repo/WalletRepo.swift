@@ -16,7 +16,7 @@ protocol WalletRepoProtocol {
 
 class WalletRepo: Network, WalletRepoProtocol{
     
-    func fetchWallets() -> AnyPublisher<Alamofire.DataResponse<[Wallet], Network.ErrorResponse>, Never>? {
+    func fetchWallets() -> AnyPublisher<DataResponse<[Wallet], Network.ErrorResponse>, Never>? {
         return get(url: Urls.wallets.rawValue)
     }
     

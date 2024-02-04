@@ -10,7 +10,7 @@ import SwiftUI
 extension InvoiceScreen {
     struct MoneyInputSection: View {
         
-        @StateObject var model: Model
+        @StateObject var viewModel: ViewModel
         
         @State private var value: String = ""
         
@@ -24,24 +24,24 @@ extension InvoiceScreen {
                             .font(.custom(Font.RimittanceFont.regular.rawValue, size: 18))
                             .keyboardType(.numberPad)
                             .autocorrectionDisabled(true)
-                            .onChange(of: value, perform: model.calculate)
+                            .onChange(of: value, perform: viewModel.calculate)
                             .submitLabel(.done)
                         Spacer()
                         Text("EUR").font(.grey50, .medium, 18)
                     }.padding(16)
-                    Spacer().frame(maxWidth: .infinity).frame(height: 1).background(contentBorderColor(model.uiState))
+                    Spacer().frame(maxWidth: .infinity).frame(height: 1).background(contentBorderColor(viewModel.uiState))
                     HStack(spacing: 0) {
                         Text("your_current_balance".localized).font(.grey100, .regular, 12)
                         Text("  230 EUR").font(.grey100, .bold, 12)
                         Spacer()
                     }
                     .padding(10)
-                    .background(containerColor(model.uiState))
+                    .background(containerColor(viewModel.uiState))
                 }
                 .frame(maxWidth: .infinity)
                 .clipShape(RoundedRectangle(cornerRadius: 8))
                 .overlay {
-                    RoundedRectangle(cornerRadius: 8).stroke(borderColor(model.uiState), lineWidth: 1)
+                    RoundedRectangle(cornerRadius: 8).stroke(borderColor(viewModel.uiState), lineWidth: 1)
                 }
             }
         }

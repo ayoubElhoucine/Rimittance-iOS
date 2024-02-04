@@ -11,16 +11,16 @@ import SwiftUI
 extension RecipientScreen {
     struct NewRecipientPage: View {
         
-        @StateObject var model: Model
+        @StateObject var viewModel: ViewModel
         
         var body: some View {
-            switch model.newUiState {
+            switch viewModel.newUiState {
             case .loading: 
                 Loading()
             case .success(let data): 
-                Success(data, didSelect: model.setSelectedCountry)
+                Success(data, didSelect: viewModel.setSelectedCountry)
             default: 
-                FailView(action: model.retryGetRecipients).padding(.top, 50)
+                FailView(action: viewModel.retryGetRecipients).padding(.top, 50)
             }
         }
         
@@ -33,7 +33,7 @@ extension RecipientScreen {
         private func Success(_ data: [Country], didSelect: @escaping (Country) -> Void) -> some View {
             VStack(alignment: .leading, spacing: 10) {
                 Text("country".localized).font(.grey100, .regular, 16)
-                if let selectedCountry = model.selectedCountry {
+                if let selectedCountry = viewModel.selectedCountry {
                     CountrySelector(selectedCountry: selectedCountry, countries: data, didSelect: didSelect)
                 }
                 RoundedRectangle(cornerRadius: 8)
@@ -54,10 +54,10 @@ extension RecipientScreen {
                     }
                     .padding(.vertical, 16)
                 HStack(spacing: 6) {
-                    Spacer().asDivider()
+                    Spacer().asDivider(color: .grey15)
                     Text("add_manually".localized.uppercased()).font(.grey50, .semiBold, 12)
-                    Spacer().asDivider()
-                }
+                    Spacer().asDivider(color: .grey15)
+                }.padding(.vertical, 10)
                 ForEach(["phone_number", "first_name", "last_name"], id: \.self) { item in
                     VStack(alignment: .leading, spacing: 6) {
                         Text(item.localized).font(.grey100, .regular, 16)

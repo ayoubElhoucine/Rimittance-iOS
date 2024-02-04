@@ -10,7 +10,7 @@ import Combine
 
 
 extension WalletOptionsScreen {
-    class Model: ObservableObject {
+    class ViewModel: ObservableObject {
         
         private var cancellables: Set<AnyCancellable> = []
         
