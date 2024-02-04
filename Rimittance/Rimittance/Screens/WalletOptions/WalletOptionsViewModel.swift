@@ -27,7 +27,7 @@ extension WalletOptionsScreen {
         }
         
         private func getWallets() {
-            WalletRepo.shared.fetchWallets()?
+            WalletRepo.shared.fetchWallets()
                 .sink { [weak self] (dataResponse) in
                     switch dataResponse.result {
                     case .success(let data):

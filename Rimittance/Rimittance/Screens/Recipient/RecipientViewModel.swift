@@ -34,7 +34,7 @@ extension RecipientScreen {
         }
         
         private func getRecipients() {
-            RecipientRepo.shared.fetchRecipients()?
+            RecipientRepo.shared.fetchRecipients()
                 .sink { [weak self] (dataResponse) in
                     switch dataResponse.result {
                     case .success(let data):
@@ -51,7 +51,7 @@ extension RecipientScreen {
         }
         
         private func getCountries() {
-            CountryRepo.shared.fetchCountries()?
+            CountryRepo.shared.fetchCountries()
                 .sink { [weak self] (dataResponse) in
                     switch dataResponse.result {
                     case .success(let data):

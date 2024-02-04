@@ -11,12 +11,12 @@ import Alamofire
 
 
 protocol RecipientRepoProtocol {
-    func fetchRecipients() -> AnyPublisher<DataResponse<[Recipient], Network.ErrorResponse>, Never>?
+    func fetchRecipients() -> AnyPublisher<DataResponse<[Recipient], Network.ErrorResponse>, Never>
 }
 
 class RecipientRepo: Network, RecipientRepoProtocol {
         
-    func fetchRecipients() -> AnyPublisher<Alamofire.DataResponse<[Recipient], Network.ErrorResponse>, Never>? {
+    func fetchRecipients() -> AnyPublisher<Alamofire.DataResponse<[Recipient], Network.ErrorResponse>, Never> {
         return get(url: Urls.recipients.rawValue)
     }
 

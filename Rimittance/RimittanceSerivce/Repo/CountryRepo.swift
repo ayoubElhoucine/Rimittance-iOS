@@ -11,12 +11,12 @@ import Alamofire
 
 
 protocol CountryRepoProtocol {
-    func fetchCountries() -> AnyPublisher<DataResponse<[Country], Network.ErrorResponse>, Never>?
+    func fetchCountries() -> AnyPublisher<DataResponse<[Country], Network.ErrorResponse>, Never>
 }
 
 class CountryRepo: Network, CountryRepoProtocol {
     
-    func fetchCountries() -> AnyPublisher<Alamofire.DataResponse<[Country], Network.ErrorResponse>, Never>? {
+    func fetchCountries() -> AnyPublisher<Alamofire.DataResponse<[Country], Network.ErrorResponse>, Never> {
         get(url: Urls.countries.rawValue)
     }
     

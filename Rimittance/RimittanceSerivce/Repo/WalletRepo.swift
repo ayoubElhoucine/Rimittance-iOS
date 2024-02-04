@@ -11,12 +11,12 @@ import Alamofire
 
 
 protocol WalletRepoProtocol {
-    func fetchWallets() -> AnyPublisher<DataResponse<[Wallet], Network.ErrorResponse>, Never>?
+    func fetchWallets() -> AnyPublisher<DataResponse<[Wallet], Network.ErrorResponse>, Never>
 }
 
 class WalletRepo: Network, WalletRepoProtocol{
     
-    func fetchWallets() -> AnyPublisher<DataResponse<[Wallet], Network.ErrorResponse>, Never>? {
+    func fetchWallets() -> AnyPublisher<DataResponse<[Wallet], Network.ErrorResponse>, Never> {
         return get(url: Urls.wallets.rawValue)
     }
     
