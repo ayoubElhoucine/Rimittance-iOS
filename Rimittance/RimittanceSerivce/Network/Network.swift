@@ -120,7 +120,7 @@ extension Network {
         get { return "my-json-server.typicode.com/MonecoHQ" }
     }
     fileprivate var base: String {
-        get { return "\(scema)\(host)/fake-api/" }
+        get { return "\(scema)://\(host)/fake-api/" }
     }
     
 }
